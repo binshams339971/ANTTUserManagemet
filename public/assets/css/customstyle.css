@@ -1,0 +1,1552 @@
+.Image{}
+.Image img{width: 50%;
+padding-top: 3px;}
+.logo{}
+.logo img{width: 15%;}
+
+.a_logo{width: 14%;}
+.a_logo img{}
+.hs1{padding-top: 0px;
+padding-bottom: 0px;}
+.htext{margin-right: 5%;}
+.htext2{margin-left: 5%}
+.texth{text-align: left; padding-top: 3%; font-weight: normal;font-size: x-large;}
+.texthm{text-align: left; padding-top: 3%; font-weight: normal;font-size: x-large;}
+
+.edu_logo img{width: 17%;}
+.school_logo img{width: 17%;}
+.eduiot_logo img{width: 17%;}
+
+.logoproductpage{width: 50%;}
+.logoproductpage img{width: 55%;}
+.logoe{width: 20%;}
+.logoe img{}
+.custom_design{margin-top: 25%;}
+.newlog{background-color: #6BE6FF;}
+.bg_1{background-color: #9BE0F7;}
+.customhero{padding-bottom: 1%;}
+.customedu{padding-bottom: 1%;}
+.herobag{
+  background-image: url("../images/banner_bg.svg"); background-repeat: no-repeat;background-position: right;
+}
+.herobagair{    background-color: #27AAE1;}
+.customair{padding-bottom: 1%;}
+
+
+.herobagair{    background-color: #27AAE1;}
+.round_image{border-radius: 10px;box-shadow: 2px 2px 2px 2px #E5E5E5;background-color: #F3F3F3}
+.card_bg{background-color: #27AAE1;}
+.top-header{background-color: #F0F1F1;}
+.fbox_image{}
+.fbox_image img{width: 50%;}
+.course_img{height: 725px;}
+.course_img img{width: 75%;
+margin-left: 7%;
+border: 2px solid #FFA302;
+box-shadow: 4px 4px 4px #CDCDCD;}
+.icon_bu{padding: 28px;}
+.icon_bu_p{margin-left: 4%;
+background-color: #1360EF;
+border: none;}
+.sicon{}
+.sicon img{width: 44%;}
+.s_banner{padding-top: 54px !important;
+padding-bottom: 145px !important;}
+
+.air_man{}
+.air_man img{width: 64%;}
+.svg_gb{background-color: #E7EEFD !important;}
+
+.cs_design{padding-top: 0px !important;
+padding-bottom: 30px;}
+
+.log_b{
+    padding-top: 6px;
+padding-bottom: 6px;
+padding-left: 10px;
+padding-right: 10px;
+font-size: 13px;
+border: 2px solid #EDB506;}
+
+.new_loing{}
+.new_loing img{width: 42%;
+padding-top: 6px;}
+
+.blog_img{    width: 50%;}
+
+
+
+
+
+@media (max-width:575.98px) {
+	
+/* .logo img{width: 50% !important;} */
+.htext{margin-right: 3%;}
+.htext2{margin-left: 3%}
+.texth{text-align: left; padding-top: 3%; font-weight: normal; padding-left: 16px;}
+.texthm{text-align: left; padding-top: 3%; font-weight: normal;}
+
+}
+
+
+
+
+
+/*------------------ANTT_STyle.css code for Edublock-------------------------*/
+/*------------------ANTT_STyle.css code for Edublock-------------------------*/
+/*------------------ANTT_STyle.css code for Edublock-------------------------*/
+.header_bg{
+    
+}
+.bg-light {
+    background-color: #eeefef!important;
+}
+
+.space{
+  padding: 50px;
+}
+.space1{
+  padding: 30px;
+}
+.button_view{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.button_view a {
+    font-family: 'Roboto', sans-serif;
+    border: 2px solid #fc7208;
+    padding: 18px 40px;
+    background-color: #fc7208;
+    color: #fff;
+    border-radius: 10px;
+    text-decoration: dotted;
+}
+
+
+/* -------***section01***---------- */
+#section01{
+  
+}
+.section01{
+  background-image: url("https://edublock.co/anttaset/product-asset/edublock/Group 10.jpg");
+  background-position: center;
+  background-origin: padding-box;
+  background-position-x: left;
+  background-position-y: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+
+#section01 h1{
+  font-family: 'Baloo Tammudu 2', cursive;
+  font-size: 48px;
+  font-weight: 800;
+  padding-top: 50px;
+  color: #fff;
+  text-decoration: solid;
+  letter-spacing: 5px;
+}
+#section01 p{
+    font-family: 'Rubik', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    padding-top: 0px;
+    padding-bottom: 10px;
+    color: #f0f0f0;
+    text-decoration: solid;
+}
+#section01 ul{
+
+}
+#section01 li{
+    display: inline-block;
+    list-style: none;
+}
+#section01 .right1{
+  text-align: left;
+}
+#section01 .row img{
+  margin: 20px 0;
+  width: 85%;
+}
+
+#section01 .playbutton img{
+  display: block;
+    margin: 0 auto;
+}
+
+
+#section01 .explore {
+    border: solid;
+    padding: 10px 13px;
+    font-family: 'Roboto', sans-serif;
+    color: #000000;
+    border-radius: 5px;
+    background: #fff;
+    border-color: #fff;
+    text-decoration: solid;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+#section01 .explore:hover{
+  border: solid;
+    padding: 15px;
+    font-family: 'Roboto', sans-serif;
+    color: #fc7208;
+    border-radius: 5px;
+    background: #fff;
+    border-color: #fff;
+    text-decoration: solid;
+
+}
+
+
+-------***section02***----------
+#section02{
+  
+}
+#section02 img{
+  
+  width: 118%;
+}
+#section02 .section02_bg{
+  
+}
+#section02 .space02{
+    padding: 30px;
+}
+#section02 h5{
+    font-family: 'Roboto', sans-serif;
+    color: #fc7208;
+    padding-top: 20px;
+}
+#section02 h3{
+font-family: 'Nunito', sans-serif;
+padding-top: 15px;
+padding-bottom: 15px;
+}
+
+#section02 p{
+  font-family: 'Rubik', sans-serif;
+    padding-bottom: 30px;
+}
+#section02 ul{
+    padding-bottom: 30px;
+}
+#section02 li{
+    display: block;
+}
+
+#section02 .btn_learn{
+  width: 140px;
+  margin: 0 20px;
+  padding: 15px 0;
+  text-align: center;
+  float: left;
+  cursor: pointer;
+  background: #F9820E;
+  position: relative;
+}
+
+#section02 .btn_learn a {
+    text-decoration: none;
+  color: #fff;
+  font-weight: 900;
+  font-size: 14px;
+  text-transform: capitalize;
+
+}
+
+#section02 .BorderTopBottom:before {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 3px;
+  top: -6px;
+  left: -7px;
+  background: #F9820E;
+  transition: all 0.5s ease;
+}
+
+#section02 .BorderTopBottom:after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 3px;
+  bottom: -6px;
+  right: -7px;
+  background: #F9820E;
+  transition: all 0.5s ease;
+}
+
+#section02 .BorderLeftRight:before {
+  content: "";
+  position: absolute;
+  top: -4px;
+  left: -7px;
+  width: 3px;
+  height: 25px;
+  background: #F9820E;
+  transition: all 0.5s ease;
+}
+
+#section02 .BorderLeftRight:after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  right: -7px;
+  width: 3px;
+  height: 25px;
+  background:#F9820E;
+  transition: all 0.5s ease;
+}
+
+#section02 .btn_learn:hover .BorderTopBottom:before,
+#section02 .btn_learn:hover .BorderTopBottom:after {
+  width: 154px;
+  transition: all 0.5s ease;
+}
+
+#section02 .btn_learn:hover .BorderLeftRight:before,
+#section02 .btn_learn:hover .BorderLeftRight:after {
+  height: 57px;
+  transition: all 0.5s ease;
+}
+/*-----------------------------------Section021-------------------------------------------------------------------*/
+#section021{
+
+}
+.section021{
+background-color: #F9820E;
+}
+#section021 H1{
+font-family: 'Nunito', sans-serif;
+padding-top: 10px;
+}
+#section021 p{
+font-family: 'Rubik', sans-serif;
+}
+#section021 a{
+    font-family: 'Roboto', sans-serif;
+    color: #000;
+    border: 1px solid;
+    border-color: #fff;
+    text-decoration: none;
+    background-color: #fff;
+    transition: all 0.5s;
+    cursor: pointer;
+    padding: 5px 8px;
+}
+#section021 a:hover{
+    padding: 6px 10px;
+    background-color: #fd9d4d;
+    color: #fff;
+
+}
+#section021 {
+
+}
+
+/*-----------------------------------Section03-------------------------------------------------------------------*/
+#section03{
+  
+}
+.section03{
+     text-align: center;
+    background-image: url("../image/CURVE-05.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 40px;
+}
+#section03 h2{
+font-family: 'Nunito', sans-serif;
+text-align: center;
+margin-bottom: 50px;
+
+}
+#section03 .space03{
+        padding: 20px;
+
+}
+#section03 .border{
+  padding: 26px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 15px;
+    margin-left: 15px;
+    margin-top: 12px;
+    margin-bottom: 20px;
+    background-color: #9bedf88a;
+}
+    
+
+#section03 .border: hover{
+  
+    background: #d4ecfd;
+}
+
+
+}
+#section03  img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 20px;
+
+}
+#section03 a{
+    text-align: center;
+}
+#section03 .border p{
+  text-align: center;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 400;
+  line-height: 11px;
+}
+#section03 .box_image{
+  display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 20px;
+    width: 70%;
+}
+#section03 .box_image1{
+  display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 20px;
+    width: 60%;
+}
+#section03 .box_image03{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 20px;
+    width:90%;
+}
+#section03 .box_image2{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 20px;
+    width: 60%;
+}
+#section03 .section03_box img{
+width: 100%;
+}
+#section03 .section03_box p{
+    font-family: 'Nunito', sans-serif;
+    font-size: 25px;
+}
+#section03 .section03_box a{
+    font-family: 'Nunito', sans-serif;
+    font-size: 25px;
+}
+
+#section03 .section11_box{
+background-image: url("../image/Group 1168.png");
+    padding-bottom: 30px;
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    background-size: cover;
+}
+#section03 .section11_box img{
+width: 100%;
+}
+#section03.section11_box p{
+font-family: 'Roboto', sans-serif;
+color: #F9820E;
+font-size: 14px;
+}
+#section03 .section11_box h4{
+font-family: 'Nunito', sans-serif;
+}
+#section03 .btn_learn{
+  width: 140px;
+  margin: 0 20px;
+  padding: 15px 0;
+  text-align: center;
+  
+  cursor: pointer;
+  background: #f9820e;
+  position: relative;
+}
+
+#section03 .section03_box .btn_learn a {
+    text-decoration: none;
+  color: #fff;
+  font-weight: 900;
+  font-size: 14px;
+  text-transform: capitalize;
+text-align: center;
+}
+
+#section03 .BorderTopBottom:before {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 3px;
+  top: -6px;
+  left: -7px;
+  background: #f9820e;
+  transition: all 0.5s ease;
+}
+
+#section03 .BorderTopBottom:after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 3px;
+  bottom: -6px;
+  right: -7px;
+  background: #f9820e;
+  transition: all 0.5s ease;
+}
+
+#section03 .BorderLeftRight:before {
+  content: "";
+  position: absolute;
+  top: -4px;
+  left: -7px;
+  width: 3px;
+  height: 25px;
+  background: #f9820e;
+  transition: all 0.5s ease;
+}
+
+#section03 .BorderLeftRight:after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  right: -7px;
+  width: 3px;
+  height: 25px;
+  background:#f9820e;
+  transition: all 0.5s ease;
+}
+
+#section03 .btn_learn:hover .BorderTopBottom:before,
+#section03 .btn_learn:hover .BorderTopBottom:after {
+  width: 154px;
+  transition: all 0.5s ease;
+}
+
+#section03 .btn_learn:hover .BorderLeftRight:before,
+#section03 .btn_learn:hover .BorderLeftRight:after {
+  height: 57px;
+  transition: all 0.5s ease;
+}
+/*-----------------------------------Section04-------------------------------------------------------------------*/
+
+#section04 img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 20px;
+    width: 100%;
+}
+/*-----------------------------------Section05-------------------------------------------------------------------*/
+#section05{
+    
+}
+.section05{
+ 
+}
+#section05 .space05{
+    padding: 25px;
+}
+#section05 h1{
+font-family: 'Nunito', sans-serif;
+text-align: center;
+margin-bottom: 50px;
+
+}
+#section05 .section05_top p{
+text-align: center;
+   font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    
+}
+#section05 .section05_textbox h2{
+    font-family: 'Nunito', sans-serif;
+text-align: left;
+margin-bottom: 30px;
+}
+#section05 .section05_textbox p{
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    padding-bottom: 30px;
+    
+}
+#section05 .section05_image img{
+    padding-top: 30px;
+    width: 90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 20px;
+}
+#section05 .btn_learn{
+  width: 140px;
+  margin: 0 20px;
+  padding: 15px 0;
+  text-align: center;
+  float: left;
+  cursor: pointer;
+  background: rgb(3 208 9);
+  position: relative;
+}
+
+#section05 .btn_learn a {
+    text-decoration: none;
+  color: #fff;
+  font-weight: 900;
+  font-size: 14px;
+  text-transform: capitalize;
+
+}
+
+#section05 .BorderTopBottom:before {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 3px;
+  top: -6px;
+  left: -7px;
+  background: rgb(3 208 9);
+  transition: all 0.5s ease;
+}
+
+#section05 .BorderTopBottom:after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 3px;
+  bottom: -6px;
+  right: -7px;
+  background: rgb(3 208 9);
+  transition: all 0.5s ease;
+}
+
+#section05 .BorderLeftRight:before {
+  content: "";
+  position: absolute;
+  top: -4px;
+  left: -7px;
+  width: 3px;
+  height: 25px;
+  background: rgb(3 208 9);
+  transition: all 0.5s ease;
+}
+
+#section05 .BorderLeftRight:after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  right: -7px;
+  width: 3px;
+  height: 25px;
+  background:rgb(3 208 9);
+  transition: all 0.5s ease;
+}
+
+#section05 .btn_learn:hover .BorderTopBottom:before,
+#section05 .btn_learn:hover .BorderTopBottom:after {
+  width: 154px;
+  transition: all 0.5s ease;
+}
+
+#section05 .btn_learn:hover .BorderLeftRight:before,
+#section05 .btn_learn:hover .BorderLeftRight:after {
+  height: 57px;
+  transition: all 0.5s ease;
+}
+/*-----------------------------------Section06-------------------------------------------------------------------*/
+#section06{
+    
+}
+.section06{
+    background-color: #CAE8F3;
+}
+.section06_textbox{
+    text-align: right;
+}
+#section06 .section06_textbox h2{
+    font-family: 'Nunito', sans-serif;
+text-align: right;
+margin-bottom: 30px;
+}
+#section06 .section06_textbox p{
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    padding-bottom: 30px;
+    text-align: right;
+}
+#section06 .section06_image img{
+    padding-top: 30px;
+    width: 90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+#section06 .btn_learn{
+  width: 140px;
+  margin: 0 20px;
+  padding: 15px 0;
+  text-align: center;
+  float: right;
+  cursor: pointer;
+  background:#FCD607;
+  position: relative;
+}
+
+#section06 .btn_learn a {
+    text-decoration: none;
+  color: #fff;
+  font-weight: 900;
+  font-size: 14px;
+  text-transform: capitalize;
+
+}
+
+#section06 .BorderTopBottom:before {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 3px;
+  top: -6px;
+  left: -7px;
+  background: #FCD607;
+  transition: all 0.5s ease;
+}
+
+#section06 .BorderTopBottom:after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 3px;
+  bottom: -6px;
+  right: -7px;
+  background: #FCD607;
+  transition: all 0.5s ease;
+}
+
+#section06 .BorderLeftRight:before {
+  content: "";
+  position: absolute;
+  top: -4px;
+  left: -7px;
+  width: 3px;
+  height: 25px;
+  background: #FCD607;
+  transition: all 0.5s ease;
+}
+
+#section06 .BorderLeftRight:after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  right: -7px;
+  width: 3px;
+  height: 25px;
+  background:#FCD607;
+  transition: all 0.5s ease;
+}
+
+#section06 .btn_learn:hover .BorderTopBottom:before,
+#section06 .btn_learn:hover .BorderTopBottom:after {
+  width: 154px;
+  transition: all 0.5s ease;
+}
+
+#section06 .btn_learn:hover .BorderLeftRight:before,
+#section06 .btn_learn:hover .BorderLeftRight:after {
+  height: 57px;
+  transition: all 0.5s ease;
+}
+/*-----------------------------------Section07-------------------------------------------------------------------*/
+#section07{
+    
+}
+.section07{
+   
+}
+#section07 .section07_textbox{
+    text-align: left;
+}
+#section07 .section07_textbox h2{
+    font-family: 'Nunito', sans-serif;
+text-align: left;
+margin-bottom: 30px;
+}
+#section07 .section07_textbox p{
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    padding-bottom: 30px;
+    text-align: left;
+}
+#section07 .section07_image img{
+    padding-top: 30px;
+    width: 90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 20px;
+}
+#section07 .btn_learn{
+  width: 140px;
+  margin: 0 20px;
+  padding: 15px 0;
+  text-align: center;
+  float: left;
+  cursor: pointer;
+  background:#4998ed;
+  position: relative;
+}
+
+#section07 .btn_learn a {
+    text-decoration: none;
+  color: #fff;
+  font-weight: 900;
+  font-size: 14px;
+  text-transform: capitalize;
+
+}
+
+#section07 .BorderTopBottom:before {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 3px;
+  top: -6px;
+  left: -7px;
+  background: #4998ed;
+  transition: all 0.5s ease;
+}
+
+#section07 .BorderTopBottom:after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 3px;
+  bottom: -6px;
+  right: -7px;
+  background: #4998ed;
+  transition: all 0.5s ease;
+}
+
+#section07 .BorderLeftRight:before {
+  content: "";
+  position: absolute;
+  top: -4px;
+  left: -7px;
+  width: 3px;
+  height: 25px;
+  background: #4998ed;
+  transition: all 0.5s ease;
+}
+
+#section07 .BorderLeftRight:after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  right: -7px;
+  width: 3px;
+  height: 25px;
+  background:#4998ed;
+  transition: all 0.5s ease;
+}
+
+#section07 .btn_learn:hover .BorderTopBottom:before,
+#section07 .btn_learn:hover .BorderTopBottom:after {
+  width: 154px;
+  transition: all 0.5s ease;
+}
+
+#section07 .btn_learn:hover .BorderLeftRight:before,
+#section07 .btn_learn:hover .BorderLeftRight:after {
+  height: 57px;
+  transition: all 0.5s ease;
+}
+/*-----------------------------------Section08-------------------------------------------------------------------*/
+#section08{
+    
+}
+.section08{
+    background-color: #F0F0F0;
+}
+.section08_textbox{
+    text-align: right;
+}
+#section08 .section08_textbox h2{
+    font-family: 'Nunito', sans-serif;
+text-align: right;
+margin-bottom: 30px;
+}
+#section08 .section08_textbox p{
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    padding-bottom: 30px;
+    text-align: right;
+}
+#section08 .section08_image img{
+    padding-top: 10px;
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 0px;
+}
+#section08 .btn_learn{
+  width: 140px;
+  margin: 0 20px;
+  padding: 15px 0;
+  text-align: center;
+  float: right;
+  cursor: pointer;
+  background:#E6244B;
+  position: relative;
+}
+
+#section08 .btn_learn a {
+    text-decoration: none;
+  color: #fff;
+  font-weight: 900;
+  font-size: 14px;
+  text-transform: capitalize;
+
+}
+
+#section08 .BorderTopBottom:before {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 3px;
+  top: -6px;
+  left: -7px;
+  background: #E6244B;
+  transition: all 0.5s ease;
+}
+
+#section08 .BorderTopBottom:after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 3px;
+  bottom: -6px;
+  right: -7px;
+  background: #E6244B;
+  transition: all 0.5s ease;
+}
+
+#section08 .BorderLeftRight:before {
+  content: "";
+  position: absolute;
+  top: -4px;
+  left: -7px;
+  width: 3px;
+  height: 25px;
+  background: #E6244B;
+  transition: all 0.5s ease;
+}
+
+#section08 .BorderLeftRight:after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  right: -7px;
+  width: 3px;
+  height: 25px;
+  background:#E6244B;
+  transition: all 0.5s ease;
+}
+
+#section08 .btn_learn:hover .BorderTopBottom:before,
+#section08 .btn_learn:hover .BorderTopBottom:after {
+  width: 154px;
+  transition: all 0.5s ease;
+}
+
+#section08 .btn_learn:hover .BorderLeftRight:before,
+#section08 .btn_learn:hover .BorderLeftRight:after {
+  height: 57px;
+  transition: all 0.5s ease;
+}
+/*-----------------------------------Section09-------------------------------------------------------------------*/
+#section09{
+    
+}
+.section09{
+    background-color: #FFF;
+}
+.section09_textbox{
+    text-align: left;
+    margin-left: 30px;
+}
+#section09 .section09_textbox h1{
+    font-family: 'Nunito', sans-serif;
+text-align: left;
+margin-bottom: 30px;
+}
+#section09 .section09_textbox h4{
+    font-family: 'Roboto', sans-serif;
+text-align: left;
+margin-bottom: 20px;
+color:  #F9820E;
+}
+#section09 .section09_textbox p{
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    padding-bottom: 30px;
+    text-align: left;
+}
+#section09 .section09_image{
+background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: 100%;
+    background-color: #A7DDE8;
+}
+
+#section09 .section09_image img{
+    padding-top: 45px;
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 0;
+}
+#section09 .btn_learn{
+  width: 140px;
+  margin: 0 20px;
+  padding: 15px 0;
+  text-align: center;
+  float: left;
+  cursor: pointer;
+  background:#f9820e;
+  position: relative;
+}
+
+#section09 .btn_learn a {
+    text-decoration: none;
+  color: #fff;
+  font-weight: 900;
+  font-size: 14px;
+  text-transform: capitalize;
+
+}
+
+#section09 .BorderTopBottom:before {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 3px;
+  top: -6px;
+  left: -7px;
+  background: #f9820e;
+  transition: all 0.5s ease;
+}
+
+#section09 .BorderTopBottom:after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 3px;
+  bottom: -6px;
+  right: -7px;
+  background: #f9820e;
+  transition: all 0.5s ease;
+}
+
+#section09 .BorderLeftRight:before {
+  content: "";
+  position: absolute;
+  top: -4px;
+  left: -7px;
+  width: 3px;
+  height: 25px;
+  background: #f9820e;
+  transition: all 0.5s ease;
+}
+
+#section09 .BorderLeftRight:after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  right: -7px;
+  width: 3px;
+  height: 25px;
+  background:#f9820e;
+  transition: all 0.5s ease;
+}
+
+#section09 .btn_learn:hover .BorderTopBottom:before,
+#section09 .btn_learn:hover .BorderTopBottom:after {
+  width: 154px;
+  transition: all 0.5s ease;
+}
+
+#section09 .btn_learn:hover .BorderLeftRight:before,
+#section09 .btn_learn:hover .BorderLeftRight:after {
+  height: 57px;
+  transition: all 0.5s ease;
+}
+
+
+/*---------------------------------------***section12***---------------------------------*/
+#section12{
+    
+}
+#section12 .section12{
+background-color: #F0F0F0;
+    padding: 40px 30px;
+}
+#section12 .space12{
+    padding: 30px;
+}
+#section12 .section12_text H5{
+font-family: 'Roboto', sans-serif;
+color: #F9820E;
+}
+#section12 .section12_text H1{
+font-family: 'Nunito', sans-serif;
+padding-bottom: 30px;
+}
+#section12  .form-control {
+height: 50px;
+border-color: #ffffff;
+border-radius:0;
+}
+#section12  .form-control:focus {
+box-shadow: none;
+border: 2px solid #243c4f;
+}
+#section12 .btn_news {
+min-height: 50px;
+    border-radius: 0;
+    background: #fc7208;
+    color: #fff;
+    font-weight: 600;
+    border-color: #fc7208;
+
+}
+-------***section13***----------
+#section13{
+    
+}
+#section13 .space13{
+    padding: 50px;
+}
+#section13 .space133{
+    padding: 50px;
+}
+.section13{
+    background-image: url("../image/Group 993.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    
+}
+#section13 .section13_text{
+    text-align: center;
+}
+
+#section13 .section13_text ul{
+  list-style: none;
+    display: inline-flex;
+    padding: 10px;
+}
+#section13 .section13_text ul li{
+    
+}
+#section13 .section13_text ul li a{
+    text-decoration: none;
+    color: #fff;
+    margin: 15px;
+    font-size: 25px;
+
+}
+#section13 .section13_text ul li a img{
+    width: 30px;
+
+}
+#section13 p{
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+    color: #fff;
+}
+/*------------------------------------------------screen change CSS----------------------------------------------------*/
+@media screen and (max-width: 480px) {
+  body{
+        text-align: center;
+
+    }
+  #section01 h1 {
+    font-family: 'Baloo Tammudu 2', cursive;
+    font-size: 38px;
+    font-weight: 700;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    color: #fff;
+    text-decoration: solid;
+    text-align: center;
+}
+    #section01 .row img{
+        margin: 40px 0;
+        width: 85%;
+    }
+    #section01 p{
+        text-align: center;
+    }
+    #section01 .explore{
+        list-style: none;
+     text-align: center;
+    }
+#section01 img {
+    margin: 0 0;
+    width: 90%;
+}
+#section01 .right1{
+    text-align: center;
+}
+.space {
+    padding: 30px;
+}
+#section02 .section02_bg {
+    background-image: url("../image/Rectangle 516.png");
+    padding-bottom: 20px;
+}
+#section02 img {
+    width: 100%;
+}
+#section03 .box-width{
+
+}
+#section03 .box_image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 20px;
+    width: 29%;
+}
+#section03 .box_image1 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 20px;
+    width: 29%;
+}
+#section03 .box_image2 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 20px;
+    width: 100%;
+}
+#section03 h2 {
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+    margin-bottom: 0;
+}
+#section03 .button03 {
+    background-color: #1C6CB5;
+    color: #fff;
+    border: 2px solid;
+    border-color: #1C6CB5;
+    padding: 16px 41px;
+    border-radius: 33px;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+}
+#section03 .button04 {
+    background-color: #854694;
+    color: #fff;
+    border: 2px solid;
+    border-color: #854694;
+    padding: 17px 41px;
+    border-radius: 33px;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+}
+#section04 img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 20px;
+    width: 101%;
+    height: 130%;
+}
+#section05 .section05_image img {
+    padding-top: 0;
+    width: 70%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 0;
+}
+#section05 .section05_textbox h2 {
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.section06_textbox {
+    text-align: center;
+
+}
+#section06 .section06_textbox p {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+#section07 .section07_textbox h2 {
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+    margin-bottom: 30px;
+}
+#section07 .section07_textbox p {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+#section07 .section07_textbox {
+    text-align: center;
+}
+#section08 .section08_textbox h2 {
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+    margin-bottom: 30px;
+}
+#section08 .section08_textbox p {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+.section08_textbox {
+    text-align: center;
+}
+#section09 .section09_textbox h4 {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #F9820E;
+    font-size: 17px;
+}
+#section09 .section09_textbox h1 {
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+#section09 .section09_textbox p {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+.section09_textbox {
+    text-align: center;
+    margin-left: 30px;
+}
+.section11 {
+    text-align: center;
+    background-image: url("../image/Path 2781.png");
+    background-repeat: repeat;
+    background-position: bottom left;
+    padding-top: 40px;
+}
+#section11 .section11_text H1 {
+    font-family: 'Nunito', sans-serif;
+    padding-bottom: 0;
+    font-size: 30px;
+    margin-bottom: -26px;
+}
+#section11 .section11_box img {
+    width: 91%;
+}
+#section11 .section11_box {
+    background-image: url("..image/Group 1168.png");
+    padding-bottom: 30px;
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    background-size: cover;
+    margin-right: 30px;
+}
+#section12 .section12_text H1 {
+    font-family: 'Nunito', sans-serif;
+    padding-bottom: 0;
+    font-size: 33px;
+}
+#section13 .section13_text ul li a {
+    text-decoration: none;
+    color: #fff;
+    margin: 15px;
+    font-size: 15px;
+}
+#section13 .space133 {
+    padding: 10px;
+}
+#section13 .space13 {
+    padding: 20px;
+}
+.section13 {
+    background-image: url("../image/Group 993.png");
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: inherit;
+}
+#section13 .section13_text ul {
+    list-style: none;
+    display: inline-flex;
+    padding: 3px;
+}
+#section06 .section06_textbox h2 {
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+}
+
+/*------------------ANTT_STyle.css code for School of IoT-------------------------*/
+/*------------------ANTT_STyle.css code for School of IoT-------------------------*/
+/*------------------ANTT_STyle.css code for School of IoT-------------------------*/
+/*------------------ANTT_STyle.css code for School of IoT-------------------------*/
+/*------------------ANTT_STyle.css code for School of IoT-------------------------*/
+/*------------------ANTT_STyle.css code for School of IoT-------------------------*/
+/*------------------ANTT_STyle.css code for School of IoT-------------------------*/
+
+
+* -------***section01***---------- */
+#section01iot{
+    
+}
+.section01iot{
+  background-image: url("https://edublock.co/anttaset/product-asset/schoolofiot/Group 10.jpg");
+  background-position: center;
+  background-origin: padding-box;
+  background-position-x: left;
+  background-position-y: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+
+#section01iot h1{
+    font-family: 'Baloo Tammudu 2', cursive;
+    font-size: 48px;
+    font-weight: 800;
+    padding-top: 50px;
+    color: #fff;
+    text-decoration: solid;
+    letter-spacing: 0;
+}
+#section01iot p{
+    font-family: 'Rubik', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    padding-top: 0px;
+    padding-bottom: 10px;
+    color: #f0f0f0;
+    text-decoration: solid;
+}
+#section01iot ul{
+
+}
+#section01iot li{
+    display: inline-block;
+    list-style: none;
+}
+#section01iot .right1{
+  text-align: left;
+}
+#section01iot .row img{
+    margin: 50px 0 0 0;
+    width: 100%;
+}
+
+#section01iot .playbutton img{
+  display: block;
+    margin: 0 auto;
+}
+
+
+#section01iot .explore {
+    border: solid;
+    padding: 10px 13px;
+    font-family: 'Roboto', sans-serif;
+    color: #000000;
+    border-radius: 5px;
+    background: #fff;
+    border-color: #fff;
+    text-decoration: solid;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+#section01iot .explore:hover{
+    border: solid;
+    padding: 15px;
+    font-family: 'Roboto', sans-serif;
+    color: #fc7208;
+    border-radius: 5px;
+    background: #fff;
+    border-color: #fff;
+    text-decoration: solid;
+
+}
+
+/*------------------ANTT_STyle.css code for School of IoT Screen Change----------------*/
+
+
+@media screen and (max-width: 480px) {
+#section01iot h1 {
+    font-family: 'Baloo Tammudu 2', cursive;
+    font-size: 38px;
+    font-weight: 700;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    color: #fff;
+    text-decoration: solid;
+    text-align: center;
+}
+    #section01iot .row img{
+        margin: 60px 0 30px 0;
+        width: 85%;
+    }
+    #section01iot p{
+        /*color: #545353;*/
+        text-align: center;
+    }
+    #section01iot .explore{
+        list-style: none;
+        text-align: center;
+    }
+    #section01iot img {
+        margin: 0 0;
+        width: 90%;
+    }
+    #section01iot .right1{
+        text-align: center;
+    }
+
+}
+
+
+
+
