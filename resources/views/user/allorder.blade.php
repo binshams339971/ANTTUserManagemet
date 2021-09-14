@@ -14,13 +14,13 @@
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
+    <script src="https://use.fontawesome.com/a85a726e0f.js"></script>
     <link href="{{ asset('/assets/css/dashboard.css') }}" rel="stylesheet" />
 </head>
 
 <body>
 <div class="row">
-    <div class="col-2 col-md-2">
+    <div class="col-md-2 col-1">
         <div class="page-wrapper chiller-theme toggled">
             <a id="show-sidebar" class="btn btn-sm btn-dark" href="#">
                 <i class="fas fa-bars"></i>
@@ -54,7 +54,7 @@
                     </li>
                     <li class="">
                         <a href="{{route('dashboard')}}">
-                        <i class="fa fa-tachometer-alt"></i>
+                        <i class="fa fa-home"></i>
                         <span>Dashboard</span>
                         </a>
                     </li>
@@ -101,7 +101,7 @@
                     </li>
                     <li>
                         <a href="{{route('logout')}}">
-                        <i class="fa fa-arrow-right"></i>
+                        <i class="fa fa-sign-out"></i>
                         <span>Logout</span>
                         </a>
                     </li>
@@ -113,35 +113,36 @@
                 </nav>
           </div>
     </div>
-    <div class="col-md-10 col-10 px-5 py-4">
+    <div class="col-md-10 col-10 px-md-5 py-5">
         <h1>Your Orders</h1>
-        <table class="table">
-            <thead class="thead-dark">
-              <tr>
-                <th scope="col">Order ID</th>
-                <th scope="col">Name</th>
-                <th scope="col">Category</th>
-                <th scope="col">Price</th>
-                <th scope="col">Order Date</th>
-                <th scope="col">Status</th>
-                <th scope="col">Payment</th>
-              </tr>
-            </thead>
-            <tbody>
-                @foreach ($orders as $order)
-                <tr>
-                    <th scope="row"> {{ $order->id }}</th>
-                    <td>{{ $order->name }}</td>
-                    <td>{{ $order->category }}</td>
-                    <td>{{ $order->price }}</td>
-                    <td>{{ \Carbon\Carbon::parse( $order->created_at )->format('d-m-Y')}}</td>
-                    <td>Pending</td>
-                    <td><a class="btn btn-outline-warning">Pay now</a></td>
-                </tr>
-                @endforeach
-            </tbody>
-          </table>
-          
+        <div class="table-responsive">
+            <table class="table">
+                <thead class="thead-dark">
+                  <tr>
+                    <th scope="col">Order ID</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Category</th>
+                    <th scope="col">Price</th>
+                    <th scope="col">Order Date</th>
+                    <th scope="col">Status</th>
+                    <th scope="col">Payment</th>
+                  </tr>
+                </thead>
+                <tbody>
+                    @foreach ($orders as $order)
+                    <tr>
+                        <th scope="row"> {{ $order->id }}</th>
+                        <td>{{ $order->name }}</td>
+                        <td>{{ $order->category }}</td>
+                        <td>{{ $order->price }}</td>
+                        <td>{{ \Carbon\Carbon::parse( $order->created_at )->format('d-m-Y')}}</td>
+                        <td>Pending</td>
+                        <td><a class="btn btn-outline-warning">Pay now</a></td>
+                    </tr>
+                    @endforeach
+                </tbody>
+            </table>
+        </div>    
     </div>
 </div>
   <!-- sidebar-wrapper  -->

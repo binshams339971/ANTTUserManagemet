@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Responsive sidebar template with sliding effect and dropdown menu based on bootstrap 3">
     <title>Sidebar template</title>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
     <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
@@ -14,13 +15,12 @@
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
+    <script src="https://use.fontawesome.com/a85a726e0f.js"></script>
     <link href="{{ asset('/assets/css/dashboard.css') }}" rel="stylesheet" />
 </head>
-
 <body>
 <div class="row">
-    <div class="col-2 col-md-2">
+    <div class="col-1 col-md-2">
         <div class="page-wrapper chiller-theme toggled">
             <a id="show-sidebar" class="btn btn-sm btn-dark" href="#">
                 <i class="fas fa-bars"></i>
@@ -53,8 +53,8 @@
                         <span>General</span>
                     </li>
                     <li class="">
-                        <a href="">
-                        <i class="fa fa-tachometer-alt"></i>
+                        <a href="{{route('dashboard')}}">
+                        <i class="fa fa-home"></i>
                         <span>Dashboard</span>
                         </a>
                     </li>
@@ -101,7 +101,7 @@
                     </li>
                     <li>
                         <a href="{{route('logout')}}">
-                        <i class="fa fa-arrow-right"></i>
+                        <i class="fa fa-sign-out"></i>
                         <span>Logout</span>
                         </a>
                     </li>
@@ -113,8 +113,103 @@
                 </nav>
           </div>
     </div>
-    <div class="col-md-10 col-10 px-5 py-4">
-        <h1>Your dashboard</h1>
+    <div class="col-md-10 col-10 px-md-5 py-5">
+        <div class="container-fluid">
+            <h2>Your Activity</h2>
+            <hr>
+            <div class="row">
+                <div class="col-lg-4 col-sm-6">
+                    <div class="card-box bg-blue">
+                        <div class="inner">
+                            <h3> {{count($orders)}}</h3> </h3>
+                            <p> Total Orders </p>
+                        </div>
+                        <div class="icon">
+                            <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                        </div>
+                        <a href="#" class="card-box-footer">View More <i class="fa fa-arrow-circle-right"></i></a>
+                    </div>
+                </div>
+    
+                <div class="col-lg-4 col-sm-6">
+                    <div class="card-box bg-green">
+                        <div class="inner">
+                            <h3> 0 </h3>
+                            <p> Paid Orders </p>
+                        </div>
+                        <div class="icon">
+                            <i class="fa fa-money"></i>
+                        </div>
+                        <a href="#" class="card-box-footer">View More <i class="fa fa-arrow-circle-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="card-box bg-orange">
+                        <div class="inner">
+                            <h3> ৳ 0 </h3>
+                            <p> Total Paid Amount </p>
+                        </div>
+                        <div class="icon">
+                            <i class="fa fa-credit-card" aria-hidden="true"></i>
+                        </div>
+                        <a href="#" class="card-box-footer">View More <i class="fa fa-arrow-circle-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="card-box bg-secondary">
+                        <div class="inner">
+                            <h3> {{count($pendings)}} </h3>
+                            <p> Pending Orders</p>
+                        </div>
+                        <div class="icon">
+                            <i class="fa fa-refresh"></i>
+                        </div>
+                        <a href="#" class="card-box-footer">View More <i class="fa fa-arrow-circle-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="card-box bg-info">
+                        <div class="inner">
+                            <h3> ৳ {{$pendingAmount}} </h3>
+                            <p> Total Pending Amount </p>
+                        </div>
+                        <div class="icon">
+                            <i class="fa fa-credit-card" aria-hidden="true"></i>
+                        </div>
+                        <a href="#" class="card-box-footer">View More <i class="fa fa-arrow-circle-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <h2 class="mt-md-5">ANTT Robotics Activity</h2>
+            <hr>
+            <div class="row">
+                <div class="col-lg-4 col-sm-6">
+                    <div class="card-box bg-primary">
+                        <div class="inner">
+                            <h3> 8 </h3>
+                            <p> Total Courses </p>
+                        </div>
+                        <div class="icon">
+                            <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+                        </div>
+                        <a href="#" class="card-box-footer">View More <i class="fa fa-arrow-circle-right"></i></a>
+                    </div>
+                </div>
+    
+                <div class="col-lg-4 col-sm-6">
+                    <div class="card-box bg-danger">
+                        <div class="inner">
+                            <h3> 2 </h3>
+                            <p> Total Products </p>
+                        </div>
+                        <div class="icon">
+                            <i class="fa fa-wpexplorer" aria-hidden="true"></i>
+                        </div>
+                        <a href="#" class="card-box-footer">View More <i class="fa fa-arrow-circle-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
         
     </div>
 </div>
@@ -156,7 +251,6 @@
         crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
-    
 </body>
 
 </html>

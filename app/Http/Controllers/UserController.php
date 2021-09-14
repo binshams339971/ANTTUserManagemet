@@ -22,16 +22,13 @@ class UserController extends Controller
             'email'=>'required|email|unique:user_models',
             'password'=>'required|min:4|max:12',
         ]);
-        
         $user = new UserModel();
         $user->name = $request->name;
         $user->email = $request->email;
         $user->password = Hash::make($request->password);
         $user->save();
         $request->session()->put('register', "register");
-        return redirect()->route('register');
-        
-        
+        return redirect()->route('register');        
     }
    
     public function loginForm()
@@ -64,7 +61,19 @@ class UserController extends Controller
 
     public function dashboard()
     {
-        return view('user.dashboard');
+        $email = session('email');
+    	$totalOrder = OrderModel::where('email', $email)->get();
+        $pendingOrder = OrderModel::where([
+            'email' => $email,
+            'status' => "pending"
+        ])->get();
+        $pendingAmount = 0;
+        for ($x = 0; $x < count($pendingOrder); $x++) {
+            $pendingAmount = $pendingAmount + $pendingOrder[$x]->price;
+        }
+        return view('user.dashboard')->with('orders', $totalOrder)
+                                    ->with('pendings', $pendingOrder)
+                                    ->with('pendingAmount', $pendingAmount);
     }
 
     public function allorder()

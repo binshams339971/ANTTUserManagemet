@@ -86,7 +86,7 @@
                             @enderror
                             <div class="col-md-12">
                                 <label class="labels">City <label class="text-danger h6">*</label></label>
-                                <input type="text" class="form-control" name="city" value="">
+                                <input type="text" class="form-control" name="city" placeholder="City" value="">
                             </div>
                             @error('city')
                                 <span class="text-danger" role="alert">
@@ -107,7 +107,7 @@
                             </div>
                             <div class="col-md-6">
                                 <label class="labels">Post Code<label>.</label></label>
-                                <input type="text" class="form-control" name="postcode" value="">
+                                <input type="text" class="form-control" name="postcode" placeholder="Postcode" value="">
 
                                 @error('postcode')
                                     <span class="text-danger" role="alert">
