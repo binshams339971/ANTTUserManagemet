@@ -68,10 +68,10 @@
                   </div>
                   <ul class="list-inline social-login-signup text-center">
                      <li class="list-inline-item my-1">
-                        <a href="{{route('google')}}" class="btn btn-google"><i class="fab fa-google pr-1"></i> Google</a>
+                        <a href="#" class="btn btn-google"><i class="fab fa-google pr-1"></i> Google</a>
                      </li>
                     <li class="list-inline-item my-1">
-                      <a href="{{route('facebook')}}" class="btn btn-facebook"><i class="fab fa-facebook-f pr-1"></i> Facebook</a>
+                      <a href="#" class="btn btn-facebook"><i class="fab fa-facebook-f pr-1"></i> Facebook</a>
                     </li>
                   </ul>
                </form>               
