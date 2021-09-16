@@ -93,12 +93,14 @@
                         <span>Profile</span>
                         </a>
                     </li>
+                    @if(!Session::has('sociallogin'))
                     <li>
                         <a href="{{route('user.changepassword')}}">
                         <i class="fa fa-unlock-alt"></i>
                         <span>Change Password</span>
                         </a>
                     </li>
+                    @endif
                     <li>
                         <a href="{{route('logout')}}">
                         <i class="fa fa-sign-out"></i>

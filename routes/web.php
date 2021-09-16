@@ -32,12 +32,12 @@ Route::get('/course/buildgames', [WelcomeController::class, 'buildgames'])->name
 Route::get('/course/soccerrobot', [WelcomeController::class, 'soccerrobot'])->name('course.soccerrobot');
 Route::get('/course/iotcar', [WelcomeController::class, 'iotcar'])->name('course.iotcar');
 
-//Course routes End
+//Shop routes
 Route::get('/shop',[WelcomeController::class, 'shop'])->name('shop');
 Route::get('/shop/edublock',[WelcomeController::class, 'edublock'])->name('shop.edublock');
 Route::get('/shop/schoolofiot',[WelcomeController::class, 'schoolofiot'])->name('shop.schoolofiot');
 
-//Press Release routes End
+//Press Release routes
 Route::get('/pressrelease', [WelcomeController::class, 'pressrelease'])->name('pressrelease');
 Route::get('/pressrelease/press1', [WelcomeController::class, 'press1'])->name('pressrelease.press1');
 Route::get('/pressrelease/press2', [WelcomeController::class, 'press2'])->name('pressrelease.press2');
@@ -71,6 +71,13 @@ Route::group(['middleware' => 'authuser'], function () {
     Route::get('/order', [UserController::class, 'orderForm'])->name('orderform');
     Route::post('/order', [UserController::class, 'orderPlace'])->name('orderform');
 });
+
+//Social Login
+Route::get('/login/google', [UserController::class, 'redirectToGoogle'])->name('google');
+Route::get('/login/google/callback', [UserController::class, 'googleLogin']);
+
+Route::get('/login/facebook', [UserController::class, 'redirectToFacebook'])->name('facebook');
+Route::get('/login/facebook/callback', [UserController::class, 'facebookLogin']);
 
 
 

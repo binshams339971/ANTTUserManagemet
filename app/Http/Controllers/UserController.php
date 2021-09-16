@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
+use Socialite;
+use Session;
 use App\Models\UserModel;
 use App\Models\UserInformation;
 use App\Models\OrderModel;
@@ -79,7 +81,7 @@ class UserController extends Controller
     public function allorder()
     {
         $email = session('email');
-    	$order = OrderModel::where('email', $email)->get();
+    	$order = OrderModel::where('email', $email)->orderBy('id', 'desc')->get();
         return view('user.allorder')->with('orders', $order);
     }
 
@@ -160,7 +162,7 @@ class UserController extends Controller
         }       
     }
 
-    public function changePasswordForm(Request $request){
+    public function changePasswordForm(){
         return view('user.changepassword');
     }
     public function changePassword(Request $request){
@@ -260,10 +262,69 @@ class UserController extends Controller
         $order->postcode = $request->postcode;
         $order->status = "Pending";
         $order->save();
+        return redirect()->route('allorder'); 
+    }
 
-        return redirect()->route('allorder');
+    //Social Login Starts Here
+    public function redirectToGoogle()
+    {
+        return Socialite::driver('google')->redirect();
+    }
 
+    public function googleLogin(Request $request)
+    {
+        $googleUser = Socialite::driver('google')->stateless()->user();
+        $this->_registerorLoginUser($googleUser, $request);
+        if(!Session::has('emailFound')){
+            return redirect()->route('dashboard');
+        }else{
+            return redirect()->route('login');
+        }
         
     }
+
+    public function redirectToFacebook()
+    {
+        return Socialite::driver('facebook')->stateless()->redirect();
+    }
+
+    public function facebookLogin(Request $request)
+    {
+        $facebookUser = Socialite::driver('facebook')->stateless()->user();
+        $this->_registerorLoginUser($facebookUser, $request);
+        if(!Session::has('emailFound')){
+            return redirect()->route('dashboard');
+        }else{
+            return redirect()->route('login');
+        }
+    }
+
+
+    protected function _registerorLoginUser($data, $request)
+    {
+    	$user = UserModel::where('socialid', $data->id)->first();
+    	if(!$user){
+            $emailCheck = UserModel::where('email', $data->email)->first();
+            if(!$emailCheck){
+                $user = new UserModel();
+                $user->name = $data->name;
+                $user->email = $data->email;
+                $user->socialid = $data->id;
+                $user->save();
+                $request->session()->put('email', $user->email);
+                $request->session()->put('name', $user->name);
+                $request->session()->put('sociallogin', $user->socialid);
+            }else{
+                $request->session()->put('emailFound', "Email Found");
+            }	
+    	}else{
+            $request->session()->put('email', $user->email);
+            $request->session()->put('name', $user->name);
+            $request->session()->put('sociallogin', $user->socialid);
+        }
+        
+    }
+
+    //Social Login Ends Here
 
 }
