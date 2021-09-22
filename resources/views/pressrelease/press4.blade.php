@@ -39,10 +39,10 @@
 
 </script>
 <style>
-    .press03 p{
+    .press04 p{
         text-align: justify;
     }
-    .press03 ul li{
+    .press04 ul li{
         text-align: justify;
     }
 </style>
@@ -68,28 +68,28 @@
         </section>
         <!--page header section end-->
         <div class="container">
-        <div class="d-flex mt-4"><a href="{{ route('home') }}">Home</a><p>-></p><a href="{{ route('pressrelease') }}">Press Release</a><p>-></p><a href="{{ route('pressrelease.press3') }}">Press 3</a></div>
+        <div class="d-flex mt-4"><a href="{{ route('home') }}">Home</a><p>-></p><a href="{{ route('pressrelease') }}">Press Release</a><p>-></p><a href="{{ route('pressrelease.press4') }}">Press 4</a></div>
             <div class="row">
                 <div class="col-12 press">
-                    <div class="press03">
-                        <img src="https://edublock.co/anttaset/pressimage/press3img0.jpg" style="max-width: 100%; padding: 20px 0;">
-                        <h5>STEM CLUB Bangladesh is back with “STEM FEST 2021: Exploring STEM through Coding” For Young Enthusiasts!</h5>
-                        <p class="pressdate">8 September 2021 / Dhaka, Bangladesh</p>
-                        <p>&emsp;&emsp;&emsp; STEM CLUB Bangladesh is going to arrange another tremendous coding competition for School & College level students after successfully hosting the <strong>“MICRO CAMP-2020”</strong> campaign with a huge overwhelming response. For those who don’t know yet, STEM CLUB Bangladesh is an excellent community platform which is aiming to build awareness among the students, educators and enthusiasts to ennoble the society through a world-leading STEM (Science, Technology, Engineering and Mathematics) education in collaboration with the Information and Communication Technology (ICT) Division, iDEA Project as partners of the great initiative.</p>
-                        <p>&emsp;&emsp;&emsp;There is a global shortage of young people entering STEM fields and careers. Now it is the time to engage the students, educators, and enthusiasts as young as possible and show how broad STEM is and what amazing opportunities there are. <strong>“STEM FEST 2021: Exploring STEM through Coding”</strong> is powered By <strong>ANTT Robotics</strong> and supported by <strong>Innovation Design and Entrepreneurship Academy (idea), ICT Division, and Korea Productivity Center (KPC)</strong>. STEM CLUB Bangladesh also has <strong>Bangladesh Robotics Foundation as an Org. Partner, The Business Standard as a Media Partner, Innokids, My e-Kids, Moonsez Art Academy as an Edu-tech Partner, Rangpur Startup as an Ecosystem Partner and Tesseract Technologies as an Technical Partner</strong> in this upcoming event.</p>
-                        <p>&emsp;&emsp;&emsp; It is all based around STEM but learning by doing.This STEM celebration is dedicated to guide enthusiasts to learn Scratch Programming, Arduino and Iot which are applicable for school & college students. Undoubtedly, the STEM fest is going to be a diverse programme to engage different communities and make STEM fields attractive and accessible.</p>
-                        <p>&emsp;&emsp;&emsp;There will be three themes to compete on which are for school & college students. We will first provide them boot camp, where they will learn about how to solve code in particular themes. Here, they will also get one-on-one mentoring sessions as well. Those Boot Camp & Mentoring sessions will be held on 10 September 2021 and 17 September 2021. We will open the challenge after every Boot Camp & Mentoring session. Students will get limited time to solve those problems. Then they have to submit their work through our procedure on a particular day. Again, every participant of STEM FEST 2021 will get a free workshop on Pitch presentation on 18 September 2021. On the final day, we will start our program with a Pitch Competition. And last but not the least, our Chief guest and honorable guests will announce the winner’s name in the closing ceremony</p>
+                    <div class="press04">
+                        <img src="https://edublock.co/anttaset/pressimage/press4img0.jpg" style="max-width: 100%; padding: 20px 0;">
+                        <h5>ANTT ROBOTICS LTD Successfully completed another training session on “Basic Robotics Skills” for the kids of Tanzania, Africa!</h5>
+                        <p class="pressdate">8 September 2021 / Tanzania, Africa</p>
+                        <p>&emsp;&emsp;&emsp; ANTT ROBOTICS LTD is a superior, award-winning portfolio company of <strong>iDEA project, ICT Division of Bangladesh</strong> providing innovative solutions to the newer generation to be adept for the 4th Industrial Revolution in today’s world. The company started its journey in early 2019 based in Dhaka, Bangladesh. Its patent-pending designed system has been developed with the help of nearly 8,000 strong STEAM community members. The whole team is comprised of seasoned R&D, technology, hardware, software & business analysis specialists with vast experience gained from working with reputed local & multinational companies. Besides, it also has a robust local network of very strong ties with maker labs, universities & educators. </p>
+                        <img src="https://edublock.co/anttaset/pressimage/press4img1.png" style="max-width: 100%; padding: 20px 0;">
+                        <p>&emsp;&emsp;&emsp;Hence, after successfully winning several awards from different International and National organizations, it was more than a pleasure for ANTT ROBOTICS LTD to host another hands-on virtual batch on <strong>“Basic Robotics Skills”</strong> for Tanzanian kids in Africa. This program was specially conducted to positively impact their STEM Education & Robotics knowledge and make a difference thereby.</p>
 
-                        <p>&emsp;&emsp;&emsp; <strong>The Champion</strong>  will get IoT Starter Kits and a 3 month Live IoT Course (it will be worth about 10,000 BDT), <strong>the 1st Runner up</strong> will get Robotics Starter Kits and a 3 month Live Robotics & Programming Course (it will be worth about 8,000 BDT) & <strong>the 2nd Runner up</strong> will get Group Discount Coupon code for free course with maximum 3 team members/ friends (it will be worth about 5,000 BDT).
-                            <br>Moreover, a printed certificate will be provided to the >strong>top 10 contestants</strong>.</p>
-                        <p>&emsp;&emsp;&emsp; <strong>Schedule Details of the STEM Fest is given below</strong> </p>
-                        <ul style="list-style-type: disc; list-style-position: inside;" class="ml-md-5 text-left">
-                            <li>Day 1: 10 September 2021 - Opening Ceremony, Arduino Boot Camp & Mentoring session.</li>
-                            <li>Day 2: 17 September 2021 - IoT Boot Camp & Mentoring session and Scratch Programming Boot Camp & Mentoring session.</li>
-                            <li>Day 3: 18 September 2021 - Pitch Presentation Workshop.</li>
-                            <li>Day 4: 24 September 2021 - Pitch Presentation Competition, Winner Announcement & Closing Ceremony.</li>
-                        </ul>
-                        <p>&emsp;&emsp;&emsp; STEM CLUB Bangladesh is focusing on STEM education equality and equity where no students should fall behind due to geolocation setbacks and school facilities lacking in the quest of preparing for the modern technology world. Therefore, the concept of the upcoming STEM Fest is to train the younger generation using the element of personalization and gamification and make a difference in the vast world of technology rather than keeping modern technologies away.</p>
+                       <p>&emsp;&emsp;&emsp;Consequently, Kids of Tanzania received a thorough session regarding interfacing of Arduino, water pump, and IR sensor. It was a 12-day learning opportunity for IOTKID LLC (which is a USA-based company but operating in Africa). ANTT conducted it to teach them the importance of automated hand sanitizer and its features.</p>
+                       <img src="https://edublock.co/anttaset/pressimage/press4img2.png" style="max-width: 100%; padding: 20px 0;">
+                        <p>&emsp;&emsp;&emsp;During this Covid pandemic, the percentage of hand sanitizer uses has increased drastically. It’s really appreciating how people are being health-conscious. But at the same time, it is a huge concern that they are oblivious of the fact that the virus may spread from hand sanitizer bottles when passed from an infected person. Hence an automated hand sanitizer is in need of. Now there’s no need to trigger using a hand. You just need to place your hand near the bottle and then the bottle will automatically be triggered.</p>
+
+                        <p>&emsp;&emsp;&emsp;This concept was brought to the kids in-depth through the “Basic Robotics Skills” session. Firstly, to automate any system one requires the machine to have a great sensor to operate without human intervention. Hence the first class after the introduction was based on a proper view of how the sensor works and what they are. With having the first step cleared they are taken to the deeper level of electronics.</p>
+                        
+                        <p>&emsp;&emsp;&emsp;Arduino fundamentals (Installation), circuit design, Arduino coding, etc were introduced to them. Not just theoretical classes but actual experimentation was shown online. To assemble the functions and create an automated hand sanitizer testing matching the standard was exhibited to them by ANTT Robotics LTD’s powerful IT team. Moreover, a basic Powerpoint skills lesson was also taken.</p>
+                        <img src="https://edublock.co/anttaset/pressimage/press4img3.png" style="max-width: 100%; padding: 20px 0;">
+                        <br>
+                        <p>&emsp;&emsp;&emsp;The 10 kids finished the session having the complete learning of automated hand sanitizer with experimentation. After completing the whole session, the kids were able to give a brief presentation based on their project learning. This basic knowledge of electronics will help them in the future to make any other automated project. The importance of such knowledge since childhood is very important rather than just imposing them with these in adult life. ANTT Robotics LTD is working hard with this noble purpose of practicing education with passion not just cramming.</p>
+                        <p>&emsp;&emsp;&emsp;Therefore, ANTT Robotics would like to express the heartiest gratitude to Bangladesh and Korean Government Authority, ICT Division, Ministry of Posts, Telecommunications and Information Technology, Innovation Design and Entrepreneurship Academy (iDEA), Korean Productivity Center (KPC), Korea Invention Promotion Association (KIPA) authority to organize this type of Entrepreneurship Incubation program through Overall Assistance for Start-up Immigration System (OASIS). </p>
                     </div>
                 </div>
             </div>

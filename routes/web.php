@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\WelcomeController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\AdminController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -42,6 +43,7 @@ Route::get('/pressrelease', [WelcomeController::class, 'pressrelease'])->name('p
 Route::get('/pressrelease/press1', [WelcomeController::class, 'press1'])->name('pressrelease.press1');
 Route::get('/pressrelease/press2', [WelcomeController::class, 'press2'])->name('pressrelease.press2');
 Route::get('/pressrelease/press3', [WelcomeController::class, 'press3'])->name('pressrelease.press3');
+Route::get('/pressrelease/press4', [WelcomeController::class, 'press4'])->name('pressrelease.press4');
 
 //Register routes
 Route::get('/register', [UserController::class, 'registerForm'])->name('register')->middleware('checklogin');
@@ -80,4 +82,16 @@ Route::get('/login/facebook', [UserController::class, 'redirectToFacebook'])->na
 Route::get('/login/facebook/callback', [UserController::class, 'facebookLogin']);
 
 
+//Admin
+Route::get('/admin/login', [AdminController::class, 'adminLoginForm'])->name('admin.login')->middleware('checkadminlogin');
+Route::post('/admin/login', [AdminController::class, 'adminLogin'])->name('admin.login');
 
+Route::group(['middleware' => 'authadmin'], function () {
+    Route::get('/admin/home', [AdminController::class, 'adminHome'])->name('admin.home');
+    Route::get('/admin/allorder', [AdminController::class, 'allOrders'])->name('admin.allorder');
+    Route::get('/admin/changepassword', [AdminController::class, 'adminChangePasswordForm'])->name('admin.changepassword');
+    Route::post('/admin/changepassword', [AdminController::class, 'adminChangePassword'])->name('admin.changepassword');
+    Route::get('/admin/newadmin', [AdminController::class, 'addNewAdminForm'])->name('admin.newadmin');
+    Route::post('/admin/newadmin', [AdminController::class, 'addNewAdmin'])->name('admin.newadmin');
+    Route::get('/admin/logout', [AdminController::class, 'logout'])->name('admin.logout');
+});

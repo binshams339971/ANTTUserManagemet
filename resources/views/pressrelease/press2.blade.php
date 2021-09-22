@@ -38,6 +38,11 @@
   gtag('config', 'UA-161682547-1');
 
 </script>
+<style>
+    .press02 p{
+        text-align: justify;
+    }
+</style>
 </head>
 
 <body>

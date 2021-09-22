@@ -36,6 +36,7 @@
   gtag('js', new Date());
 
   gtag('config', 'UA-161682547-1');
+
 </script>
 <style>
     .press-release p{
@@ -65,8 +66,14 @@
         <!--page header section end-->
         <div class="container">
             <div class="d-flex mt-4"><a href="{{ route('home') }}">Home</a><p>-></p><a href="{{ route('pressrelease') }}">Press Release</a></div>
-            <div class="row press-release">
-                <div class="col-md-8 col-12">
+            <div class="row">
+                <div class="col-md-8 col-12 press-release">
+                    <div class="">
+                        <img src="https://edublock.co/anttaset/pressimage/press4img0.jpg" style="max-width: 100%; padding: 20px 0;">
+                        <h5>ANTT ROBOTICS LTD Successfully completed another training session on “Basic Robotics Skills” for the kids of Tanzania, Africa!</h5>
+                        <p>ANTT ROBOTICS LTD is a superior, award-winning portfolio company of iDEA project, ICT Division of Bangladesh providing innovative solutions to the newer generation to be adept for the 4th Industrial Revolution in today’s world. The company started its journey in early 2019 based in Dhaka, Bangladesh. Its patent-pending designed system has been developed with the help of nearly 8,000 strong STEAM community members.</p><br>
+                        <a href="{{ route('pressrelease.press4') }}" class="btn-readmore">Read More</a>
+                    </div><br>
                     <div class="">
                         <img src="https://edublock.co/anttaset/pressimage/press3img0.jpg" style="max-width: 100%; padding: 20px 0;">
                         <h5>STEM CLUB Bangladesh is back with “STEM FEST 2021: Exploring STEM through Coding” For Young Enthusiasts!</h5>

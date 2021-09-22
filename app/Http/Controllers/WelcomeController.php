@@ -98,7 +98,12 @@ class WelcomeController extends Controller
     {
         return view('pressrelease.press3');
     }
+    public function press4()
+    {
+        return view('pressrelease.press4');
+    }
 
+    //Solutin Page
     public function solution()
     {
         return view('solution');

@@ -44,7 +44,6 @@ class UserController extends Controller
             'email'=>'required|email',
             'password'=>'required|min:4|max:12',
         ]);
-
         $user = UserModel::where('email', $request->email)->get();
         if(count($user) > 0){
             if (Hash::check($request->password, $user[0]->password)) {
@@ -60,7 +59,6 @@ class UserController extends Controller
         }
         
     }
-
     public function dashboard()
     {
         $email = session('email');
@@ -207,7 +205,8 @@ class UserController extends Controller
     }
 
     public function logout(Request $request){
-        $request->session()->flush();
+        $request->session()->forget('email');
+        $request->session()->forget('name');
         return redirect()->route('home');
     }
 

@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Responsive sidebar template with sliding effect and dropdown menu based on bootstrap 3">
-    <title>Change Password | ANTT Robotics Ltd.</title>
+    <title>Change Password | Admin</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
@@ -27,8 +27,7 @@
             <div class="col-md-4 border-right">
                 <div class="d-flex flex-column align-items-center text-center p-3 py-5">
                     <img class="rounded-circle mt-5" width="150px" src="https://st3.depositphotos.com/15648834/17930/v/600/depositphotos_179308454-stock-illustration-unknown-person-silhouette-glasses-profile.jpg">
-                    <span class="font-weight-bold">{{ session()->get('name') }}</span>
-                    <span class="text-black-50">{{ session()->get('email') }}</span>
+                    <span class="font-weight-bold">{{ session()->get('admin') }}</span>
                     <span></span>
                 </div>
             </div>
@@ -37,7 +36,7 @@
                     <div class="d-flex justify-content-between align-items-center mb-3">
                         <h4 class="text-right">Change Password</h4>
                     </div>
-                    <form action="{{route('user.changepassword')}}" method="POST">
+                    <form action="{{route('admin.changepassword')}}" method="POST">
                     @csrf
                         <div class="row mt-3">
                             <div class="col-md-12">
@@ -69,7 +68,7 @@
                             @enderror 
                         </div>
                         <div class="mt-5 text-center">
-                            <a class="btn btn-outline-warning text-dark mr-2" href="{{route('dashboard')}}" >Back</a>
+                            <a class="btn btn-outline-warning text-dark mr-2" href="{{route('admin.home')}}" >Back</a>
                             <input class="btn btn-outline-success text-dark ml-2" type="submit" id="submit" value="Save">
                         </div>
                         
@@ -91,7 +90,7 @@
                icon: "success",
                button: "OK",
             }).then(function() {
-               window.location = "/home";
+               window.location = "/admin/home";
                <?php
                   Session::forget('change-success');
                ?>
@@ -106,7 +105,7 @@
                icon: "error",
                button: "OK",
             }).then(function() {
-               window.location = "/user/changepassword";
+               window.location = "/admin/changepassword";
                <?php
                   Session::forget('change-fail');
                ?>
@@ -121,7 +120,7 @@
                icon: "error",
                button: "OK",
             }).then(function() {
-               window.location = "/user/changepassword";
+               window.location = "/admin/changepassword";
                <?php
                   Session::forget('change-fail2');
                ?>

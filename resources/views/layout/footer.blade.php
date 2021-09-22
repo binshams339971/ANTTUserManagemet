@@ -104,7 +104,7 @@
                                     <a href="#">FAQ  </a>
                                 </li>
                                 <li>
-                                    <a href="{{ route('register') }}">Sign Up</a>
+                                    <a href="{{ route('admin.login') }}">Admin</a>
                                 </li>
                             </ul>
                         </div>

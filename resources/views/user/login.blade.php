@@ -3,7 +3,7 @@
 <html lang="en" dir="ltr">
    <head>
       <meta charset="utf-8">
-      <title>Login and Registration Form in HTML | CodingNepal</title>
+      <title>Login | ANTT Robotics Ltd.</title>
       <link rel="stylesheet" href="style.css">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
@@ -11,11 +11,6 @@
       <link href="{{ asset('/assets/css/register.css') }}" rel="stylesheet" />
     </head>
    <body>
-    <div class="logo">
-    <!-- <a class="" href="{{ route('home') }}">
-      <img src="https://edublock.co/anttaset/ANTTRobotics_logo_full%20white-04.png" class="">
-    </a> -->
-    </div>
       <div class="wrapper">
          <div class="logo">
           <a class="" href="{{ route('home') }}">

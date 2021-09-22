@@ -38,6 +38,11 @@
   gtag('config', 'UA-161682547-1');
 
 </script>
+<style>
+    .press01 p{
+        text-align: justify;
+    }
+</style>
 </head>
 
 <body>
@@ -63,7 +68,7 @@
             <div class="d-flex mt-4"><a href="{{ route('home') }}">Home</a><p>-></p><a href="{{ route('pressrelease') }}">Press Release</a><p>-></p><a href="{{ route('pressrelease.press1') }}">Press 1</a></div>
             <div class="row">
                 <div class="col-12 press">
-                    <div class="">
+                    <div class="press01">
                         <img src="https://edublock.co/anttaset/pressimage/press1image1.png" style="max-width: 100%; padding: 20px 0;">
                         <h5>ANTT Robotics Raises Angel Round to Accelerate International Expansion</h5>
                         <p class="pressdate">12 August 2021 / Seoul, South Korea</p>

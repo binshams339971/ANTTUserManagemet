@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Responsive sidebar template with sliding effect and dropdown menu based on bootstrap 3">
-    <title>User | ANTT Robotics Ltd.</title>
+    <title>Admin Dashboard</title>
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
@@ -28,7 +28,7 @@
             <nav id="sidebar" class="sidebar-wrapper">
                 <div class="sidebar-content">
                 <div class="sidebar-brand">
-                    <a href="#">ANTT ROBOTICS LTD.</a>
+                    <a href="{{route('home')}}">ANTT ROBOTICS LTD.</a>
                     <div id="close-sidebar">
                     <i class="d-block d-md-none fas fa-times"></i>
                     </div>
@@ -39,8 +39,8 @@
                         alt="User picture">
                     </div>
                     <div class="user-info">
-                    <span class="user-name">{{ session()->get('name') }}</span>
-                    <span class="user-role">User</span>
+                    <span class="user-name">{{ session()->get('admin') }}</span>
+                    <span class="user-role">Admin</span>
                     <span class="user-status">
                         <i class="fa fa-circle"></i>
                         <span>Online</span>
@@ -53,56 +53,42 @@
                         <span>General</span>
                     </li>
                     <li class="">
-                        <a href="{{route('dashboard')}}">
+                        <a href="{{route('admin.home')}}">
                         <i class="fa fa-home"></i>
                         <span>Dashboard</span>
                         </a>
                     </li>
                     <li class="sidebar-dropdown">
-                        <a href="{{route('course')}}">
-                        <i class="fa fa-book"></i>
-                        <span>Courses</span>
-                        <span class="badge badge-pill badge-danger">8</span>
-                        </a>
-                    </li>
-                    <li class="sidebar-dropdown">
-                        <a href="{{route('shop')}}">
-                        <i class="far fa-gem"></i>
-                        <span>Products</span>
-                        <span class="badge badge-pill badge-danger">2</span>
-                        </a>
-                    </li>
-                    <li class="sidebar-dropdown">
-                        <a href="{{route('allorder')}}">
+                        <a href="{{route('admin.allorder')}}">
                         <i class="fa fa-chart-line"></i>
-                        <span>Orders</span>
+                        <span>All Orders</span>
                         </a>
                     </li>
                     <li class="">
-                        <a href="{{route('home')}}">
-                        <i class="fa fa-globe"></i>
-                        <span>ANTT Robotics</span>
+                        <a href="#">
+                        <i class="fa fa-user"></i>
+                        <span>All Registered User's</span>
                         </a>
                     </li>
                     <li class="header-menu">
                         <span>Extra</span>
                     </li>
-                    <li>
-                        <a href="{{route('user.profile')}}">
-                        <i class="fa fa-user"></i>
-                        <span>Profile</span>
-                        </a>
-                    </li>
-                    @if(!Session::has('sociallogin'))
-                    <li>
-                        <a href="{{route('user.changepassword')}}">
-                        <i class="fa fa-unlock-alt"></i>
-                        <span>Change Password</span>
+                    @if(session()->get('username') == "superadmin")
+                    <li class="">
+                        <a href="{{route('admin.newadmin')}}">
+                        <i class="fa fa-users"></i>
+                        <span>Add New Admin</span>
                         </a>
                     </li>
                     @endif
                     <li>
-                        <a href="{{route('logout')}}">
+                        <a href="{{route('admin.changepassword')}}">
+                        <i class="fa fa-unlock-alt"></i>
+                        <span>Change Password</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{{route('admin.logout')}}">
                         <i class="fa fa-sign-out"></i>
                         <span>Logout</span>
                         </a>
@@ -117,7 +103,7 @@
     </div>
     <div class="col-md-10 col-10 px-md-5 py-5">
         <div class="container-fluid">
-            <h2>Your Activity</h2>
+            <h2>User's Activity</h2>
             <hr>
             <div class="row">
                 <div class="col-lg-4 col-sm-6">
@@ -177,35 +163,6 @@
                         </div>
                         <div class="icon">
                             <i class="fa fa-credit-card" aria-hidden="true"></i>
-                        </div>
-                        <a href="#" class="card-box-footer">View More <i class="fa fa-arrow-circle-right"></i></a>
-                    </div>
-                </div>
-            </div>
-            <h2 class="mt-md-5">ANTT Robotics Activity</h2>
-            <hr>
-            <div class="row">
-                <div class="col-lg-4 col-sm-6">
-                    <div class="card-box bg-primary">
-                        <div class="inner">
-                            <h3> 8 </h3>
-                            <p> Total Courses </p>
-                        </div>
-                        <div class="icon">
-                            <i class="fa fa-graduation-cap" aria-hidden="true"></i>
-                        </div>
-                        <a href="#" class="card-box-footer">View More <i class="fa fa-arrow-circle-right"></i></a>
-                    </div>
-                </div>
-    
-                <div class="col-lg-4 col-sm-6">
-                    <div class="card-box bg-danger">
-                        <div class="inner">
-                            <h3> 2 </h3>
-                            <p> Total Products </p>
-                        </div>
-                        <div class="icon">
-                            <i class="fa fa-wpexplorer" aria-hidden="true"></i>
                         </div>
                         <a href="#" class="card-box-footer">View More <i class="fa fa-arrow-circle-right"></i></a>
                     </div>

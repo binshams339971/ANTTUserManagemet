@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Responsive sidebar template with sliding effect and dropdown menu based on bootstrap 3">
-    <title>User Orders | ANTT Robotics Ltd.</title>
+    <title>All Orders | Admin</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
     <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
@@ -20,7 +20,7 @@
 
 <body>
 <div class="row">
-    <div class="col-md-2 col-1">
+    <div class="col-1 col-md-2">
         <div class="page-wrapper chiller-theme toggled">
             <a id="show-sidebar" class="btn btn-sm btn-dark" href="#">
                 <i class="fas fa-bars"></i>
@@ -28,7 +28,7 @@
             <nav id="sidebar" class="sidebar-wrapper">
                 <div class="sidebar-content">
                 <div class="sidebar-brand">
-                    <a href="#">ANTT ROBOTICS LTD.</a>
+                    <a href="{{route('home')}}">ANTT ROBOTICS LTD.</a>
                     <div id="close-sidebar">
                     <i class="d-block d-md-none fas fa-times"></i>
                     </div>
@@ -39,8 +39,8 @@
                         alt="User picture">
                     </div>
                     <div class="user-info">
-                    <span class="user-name">{{ session()->get('name') }}</span>
-                    <span class="user-role">User</span>
+                    <span class="user-name">{{ session()->get('admin') }}</span>
+                    <span class="user-role">Admin</span>
                     <span class="user-status">
                         <i class="fa fa-circle"></i>
                         <span>Online</span>
@@ -53,56 +53,42 @@
                         <span>General</span>
                     </li>
                     <li class="">
-                        <a href="{{route('dashboard')}}">
+                        <a href="{{route('admin.home')}}">
                         <i class="fa fa-home"></i>
                         <span>Dashboard</span>
                         </a>
                     </li>
                     <li class="sidebar-dropdown">
-                        <a href="{{route('course')}}">
-                        <i class="fa fa-book"></i>
-                        <span>Courses</span>
-                        <span class="badge badge-pill badge-danger">8</span>
-                        </a>
-                    </li>
-                    <li class="sidebar-dropdown">
-                        <a href="{{route('shop')}}">
-                        <i class="far fa-gem"></i>
-                        <span>Products</span>
-                        <span class="badge badge-pill badge-danger">2</span>
-                        </a>
-                    </li>
-                    <li class="sidebar-dropdown">
-                        <a href="{{route('allorder')}}">
+                        <a href="{{route('admin.allorder')}}">
                         <i class="fa fa-chart-line"></i>
-                        <span>Orders</span>
+                        <span>All Orders</span>
                         </a>
                     </li>
                     <li class="">
-                        <a href="{{route('home')}}">
-                        <i class="fa fa-globe"></i>
-                        <span>ANTT Robotics</span>
+                        <a href="#">
+                        <i class="fa fa-user"></i>
+                        <span>All Registered User's</span>
                         </a>
                     </li>
                     <li class="header-menu">
                         <span>Extra</span>
                     </li>
-                    <li>
-                        <a href="{{route('user.profile')}}">
-                        <i class="fa fa-user"></i>
-                        <span>Profile</span>
-                        </a>
-                    </li>
-                    @if(!Session::has('sociallogin'))
-                    <li>
-                        <a href="{{route('user.changepassword')}}">
-                        <i class="fa fa-unlock-alt"></i>
-                        <span>Change Password</span>
+                    @if(session()->get('username') == "superadmin")
+                    <li class="">
+                        <a href="{{route('admin.newadmin')}}">
+                        <i class="fa fa-users"></i>
+                        <span>Add New Admin</span>
                         </a>
                     </li>
                     @endif
                     <li>
-                        <a href="{{route('logout')}}">
+                        <a href="{{route('admin.changepassword')}}">
+                        <i class="fa fa-unlock-alt"></i>
+                        <span>Change Password</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{{route('admin.logout')}}">
                         <i class="fa fa-sign-out"></i>
                         <span>Logout</span>
                         </a>
@@ -116,18 +102,25 @@
           </div>
     </div>
     <div class="col-md-10 col-10 px-md-5 py-5">
-        <h1>Your Orders</h1>
+        <h1>All Orders</h1>
         <div class="table-responsive">
             <table class="table">
                 <thead class="thead-dark">
                   <tr>
                     <th scope="col">Order ID</th>
-                    <th scope="col">Name</th>
+                    <th scope="col">Order Name</th>
                     <th scope="col">Category</th>
                     <th scope="col">Price</th>
                     <th scope="col">Order Date</th>
-                    <th scope="col">Status</th>
-                    <th scope="col">Payment</th>
+                    <th scope="col">Payment Status</th>
+                    <th scope="col">Student Name</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Phone</th>
+                    <th scope="col">School</th>
+                    <th scope="col">Class</th>
+                    <th scope="col">Address</th>
+                    <th scope="col">City</th>
+                    <th scope="col">Country</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -139,7 +132,14 @@
                         <td>{{ $order->price }}</td>
                         <td>{{ \Carbon\Carbon::parse( $order->created_at )->format('d-m-Y')}}</td>
                         <td>Pending</td>
-                        <td><a class="btn btn-outline-warning">Pay now</a></td>
+                        <td>{{ $order->studentname }}</td>
+                        <td>{{ $order->email }}</td>
+                        <td>{{ $order->phone }}</td>
+                        <td>{{ $order->school }}</td>
+                        <td>{{ $order->class }}</td>
+                        <td>{{ $order->address }}</td>
+                        <td>{{ $order->city }}</td>
+                        <td>{{ $order->country }}</td>
                     </tr>
                     @endforeach
                 </tbody>

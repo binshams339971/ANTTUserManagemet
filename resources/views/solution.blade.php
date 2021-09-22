@@ -46,7 +46,7 @@
                     <img src="https://edublock.co/anttaset/solution/laptop1.png">
                 </div>
                 <div class="col-sm-12 col-md-6 right1">
-                    <h1>LMS Title</h1>
+                    <h1>LMS</h1>
                     <p>The Best All-In-One <br> Learning Experience You Need!!</p>
                     <ul>
                         <li><a href="#" class="explore"> <span>Buy Now</span></a></li>
@@ -82,8 +82,8 @@
               </div>
             </div>
             <div class="col-lg-6 col-12 text-center">
-              <h1 class="title font-weight-bold">LMS Title</h1>
-              <p class="mb-5 font-weight-bold">Simplify Learning & Teaching for a smarter future!</p>
+              <h1 class="title font-weight-bold">LMS</h1>
+              <p class="mb-5 font-weight-bold text-uppercase">Simplify Learning & Teaching for a smarter future!</p>
               <div class="row" style="height:120px;">
                 <div class="col-6 staricon">
                   <img src="https://edublock.co/anttaset/product-asset/edublock/Reviewicons.png">
