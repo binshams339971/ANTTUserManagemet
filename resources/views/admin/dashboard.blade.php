@@ -122,7 +122,7 @@
                 <div class="col-lg-4 col-sm-6">
                     <div class="card-box bg-green">
                         <div class="inner">
-                            <h3> 0 </h3>
+                            <h3> {{count($paid)}} </h3>
                             <p> Paid Orders </p>
                         </div>
                         <div class="icon">
@@ -134,7 +134,7 @@
                 <div class="col-lg-4 col-sm-6">
                     <div class="card-box bg-orange">
                         <div class="inner">
-                            <h3> ৳ 0 </h3>
+                            <h3> ৳ {{$paidAmount}} </h3>
                             <p> Total Paid Amount </p>
                         </div>
                         <div class="icon">

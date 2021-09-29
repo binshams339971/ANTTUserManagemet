@@ -131,7 +131,7 @@
                         <td>{{ $order->category }}</td>
                         <td>{{ $order->price }}</td>
                         <td>{{ \Carbon\Carbon::parse( $order->created_at )->format('d-m-Y')}}</td>
-                        <td>Pending</td>
+                        <td>{{ $order->status }}</td>
                         <td>{{ $order->studentname }}</td>
                         <td>{{ $order->email }}</td>
                         <td>{{ $order->phone }}</td>

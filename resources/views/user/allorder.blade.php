@@ -10,7 +10,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
     <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
- 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -138,8 +139,12 @@
                         <td>{{ $order->category }}</td>
                         <td>{{ $order->price }}</td>
                         <td>{{ \Carbon\Carbon::parse( $order->created_at )->format('d-m-Y')}}</td>
-                        <td>Pending</td>
-                        <td><a class="btn btn-outline-warning">Pay now</a></td>
+                        <td>{{ $order->status }}</td>
+                        @if($order->status == "Pending")
+                        <td><a href="{{ route('paynow', ['orderid'=>$order->id, 'productname'=>$order->name, 'price'=>$order->price, 'name'=>$order->studentname, 'phone'=>$order->phone, 'email'=>$order->email, 'address'=>$order->address, 'state'=>$order->city, 'country'=>$order->country, 'postcode'=>$order->postcode] )}}" class="btn btn-outline-secondary" id="sslczPayBtn"> Pay Now </a></td>
+                        @elseif($order->status == "Paid")
+                        <td><a href="" class="btn btn-success disabled" id="sslczPayBtn"> Paid </a></td>
+                        @endif
                     </tr>
                     @endforeach
                 </tbody>
@@ -180,6 +185,50 @@
             });
         });
     </script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js" integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+     @if(Session::has('pay-success'))
+        <script>
+           swal({
+              title: "Payment Successful!",
+              text: "Your payment has been successfully completed.",
+              icon: "success",
+              button: "OK",
+           }).then(function() {
+              window.location = "/user/order";
+              <?php
+                 Session::forget('pay-success');
+              ?>
+           });
+        </script>
+     @elseif(Session::has('pay-fail'))
+        <script>
+           swal({
+              title: "Payment Failed!",
+              text: "Your payment has been failed.",
+              icon: "error",
+              button: "OK",
+           }).then(function() {
+            window.location = "/user/order";
+              <?php
+                 Session::forget('pay-fail');
+              ?>
+           });
+        </script>
+     @elseif(Session::has('pay-cancel'))
+        <script>
+           swal({
+              title: "Payment Cancelled!",
+              text: "Your payment has been cancelled",
+              icon: "error",
+           }).then(function() {
+            window.location = "/user/order";
+              <?php
+                 Session::forget('pay-cancel');
+              ?>
+           });
+        </script>
+     @endif
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>

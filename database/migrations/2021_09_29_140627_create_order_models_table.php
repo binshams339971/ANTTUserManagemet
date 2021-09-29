@@ -28,6 +28,7 @@ class CreateOrderModelsTable extends Migration
             $table->string('country');
             $table->string('postcode')->nullable();
             $table->string('status');
+            $table->string('transaction_id')->nullable();
             $table->timestamps();
         });
     }

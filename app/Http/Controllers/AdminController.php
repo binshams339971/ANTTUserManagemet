@@ -45,7 +45,17 @@ class AdminController extends Controller
         for ($x = 0; $x < count($pendingOrder); $x++) {
             $pendingAmount = $pendingAmount + $pendingOrder[$x]->price;
         }
+
+        $paidOrder = OrderModel::where([
+            'status' => "paid"
+        ])->get();
+        $paidAmount = 0;
+        for ($x = 0; $x < count($paidOrder); $x++) {
+            $paidAmount = $paidAmount + $paidOrder[$x]->price;
+        }
         return view('admin.dashboard')->with('orders', $totalOrder)
+                                    ->with('paid', $paidOrder)
+                                    ->with('paidAmount', $paidAmount)
                                     ->with('pendings', $pendingOrder)
                                     ->with('pendingAmount', $pendingAmount);
     }
