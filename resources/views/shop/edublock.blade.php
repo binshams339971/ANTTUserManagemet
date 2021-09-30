@@ -113,7 +113,7 @@
             </ul>
             <div class="action-btns mt-4">
               <!-- <a href="#" target="_blank" class="btn btn-brand-02 mr-3">Start Now</a> -->
-              <a class="btn btn-brand-02" href="{{ route('orderform', ['name'=> 'EduBlock', 'category' => 'Product', 'price' => 6800, 'image' => 'https://edublock.co/anttaset/product-asset/edublock/p2.png']) }}">Buy Now</a>
+              <a class="btn btn-brand-02" href="{{ route('orderform', ['name'=> 'EduBlock', 'category' => 'Product', 'price' => 10, 'image' => 'https://edublock.co/anttaset/product-asset/edublock/p2.png']) }}">Buy Now</a>
           </div>
             </div>
           </div>
