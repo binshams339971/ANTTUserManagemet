@@ -49,8 +49,8 @@
                     <div class="single-team-wrap bg-white text-center border rounded p-4 mt-4">
                         <img src="https://edublock.co/anttaset/team-member-image/member5.png" alt="team image" width="120" class="img-fluid m-auto pb-4">
                         <div class="team-content">
-                            <h5 class="mb-0">Jayme Brown</h5>
-                            <span>Advisor</span><br><br>
+                            <h5 class="mb-0 mt-3">Jayme Brown</h5>
+                            <span>Advisor</span><br><br><br>
                             <ul class="list-inline social-list-default social-color icon-hover-top-bottom">
                                 <li class="list-inline-item">
                                     <a class="facebook" href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
