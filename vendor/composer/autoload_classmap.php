@@ -37,6 +37,7 @@ return array(
     'App\\Library\\SslCommerz\\SslCommerzInterface' => $baseDir . '/app/Library/SslCommerz/SslCommerzInterface.php',
     'App\\Library\\SslCommerz\\SslCommerzNotification' => $baseDir . '/app/Library/SslCommerz/SslCommerzNotification.php',
     'App\\Models\\AdminModel' => $baseDir . '/app/Models/AdminModel.php',
+    'App\\Models\\ContactUsModel' => $baseDir . '/app/Models/ContactUsModel.php',
     'App\\Models\\OrderModel' => $baseDir . '/app/Models/OrderModel.php',
     'App\\Models\\User' => $baseDir . '/app/Models/User.php',
     'App\\Models\\UserInformation' => $baseDir . '/app/Models/UserInformation.php',

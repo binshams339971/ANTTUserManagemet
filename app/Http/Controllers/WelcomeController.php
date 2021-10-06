@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\ContactUsModel;
 
 class WelcomeController extends Controller
 {
@@ -158,9 +159,18 @@ class WelcomeController extends Controller
             'name'=>'required|min:3|max:16' ,
             'email'=>'required|email',
             'phone'=>'required|min:11|max:11',
-            'organzation'=>'required|min:3|max:52',
+            'organization'=>'required|min:3|max:52',
             'message'=>'required|min:5|max:256',
         ]);
+        $contact = new ContactUsModel();
+        $contact->name = $request->name;
+        $contact->email = $request->email;
+        $contact->phone = $request->phone;
+        $contact->organization = $request->organization;
+        $contact->message = $request->message;
+        $contact->save();
+        $request->session()->put('success11', "1");
+        return redirect()->route('partnership');
 
     }
 

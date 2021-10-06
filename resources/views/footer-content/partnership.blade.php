@@ -114,10 +114,10 @@
                             @enderror
                             <div class="row mt-3">
                                 <div class="col-md-12"><p class="labels mb-0 text-left text-dark">What is your Organization?</p>
-                                    <input type="text" name="organzation" class="form-control" value="">
+                                    <input type="text" name="organization" class="form-control" value="">
                                 </div>
                             </div>
-                            @error('organzation')
+                            @error('organization')
                                 <span class="text-danger" role="alert">
                                     <strong style="font-size: 12px;">{{ $message }}</strong>
                                 </span>
@@ -146,8 +146,24 @@
 
 @include('layout.footer')
 </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js" integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        @if(Session::has('success11'))
+        <script>
+            swal({
+               title: "Your message has been sent.",
+               text: "You will contact with you soon!",
+               icon: "success",
+               button: "OK",
+            }).then(function() {
+               window.location = "/";
+               <?php
+                  Session::forget('success11');
+               ?>
+            });
+         </script>
+        @endif
 
-<!--new add-->
 <script src="{{ asset('/assets/js/vendors/jquery.js') }}"></script>
 <script src="{{ asset('/assets/js/vendors/bootstrap1.min.js') }}" />
 <script src="{{ asset('/assets/js/vendors/bootstrap.min.js') }}"></script>

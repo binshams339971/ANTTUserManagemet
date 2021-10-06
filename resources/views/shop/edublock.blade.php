@@ -138,7 +138,7 @@
             <p class="text-center text-dark"><strong>Contact Number:</strong> +8801925-770036</p>
           </div>
           <div class="modal-footer">
-            <a href="#" class="btn btn-secondary btn-sm">Contact Us</a>
+            <a href="{{route('partnership')}}" class="btn btn-secondary btn-sm">Contact Us</a>
           </div>
         </div>
       </div>
