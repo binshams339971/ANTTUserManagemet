@@ -99,8 +99,8 @@
                   <img src="https://edublock.co/anttaset/product-asset/edublock/Reviewicons.png">
                 </div>
                 <div class="col-6">
-                  <p class="font-weight-bold" style="color: black;">Price</p>
-                  <span class="product-price"><del class="text-muted">BDT 8499</del> BDT 6800</span>
+                  {{-- <p class="font-weight-bold" style="color: black;">Price</p>
+                  <span class="product-price"><del class="text-muted">BDT 8499</del> BDT 6800</span> --}}
                 </div>
               </div>
               <ul class="check-list-wrap text-left">
@@ -112,15 +112,37 @@
                 <li>No wire connection needed for basic learning. Plug & Play Hitech solutions using Modern technology.</li>
             </ul>
             <div class="action-btns mt-4">
+              <button type="button" class="btn btn-brand-02" data-toggle="modal" data-target="#exampleModalCenter">
+                Buy Now
+              </button>
               <!-- <a href="#" target="_blank" class="btn btn-brand-02 mr-3">Start Now</a> -->
-              <a class="btn btn-brand-02" href="{{ route('orderform', ['name'=> 'EduBlock', 'category' => 'Product', 'price' => 10, 'image' => 'https://edublock.co/anttaset/product-asset/edublock/p2.png']) }}">Buy Now</a>
-          </div>
+              {{-- <a class="btn btn-brand-02" href="{{ route('orderform', ['name'=> 'EduBlock', 'category' => 'Product', 'price' => 10, 'image' => 'https://edublock.co/anttaset/product-asset/edublock/p2.png']) }}">Buy Now</a> --}}
+            </div>
             </div>
           </div>
         </div>                                          
       </div>
     </section>
-
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">Buy Edublock</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p class="text-center text-dark">For Buying Edublock Please contact with us</p>
+            <p class="text-center text-dark"><strong>E-mail:</strong> anttrobotics@gmail.com</p>
+            <p class="text-center text-dark"><strong>Contact Number:</strong> +8801925-770036</p>
+          </div>
+          <div class="modal-footer">
+            <a href="#" class="btn btn-secondary btn-sm">Contact Us</a>
+          </div>
+        </div>
+      </div>
+    </div>
     <section class="d-lg-block d-none">
       <div class="">
         <div class="container">

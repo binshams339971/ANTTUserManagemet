@@ -7,8 +7,9 @@
                         <img src="https://edublock.co/anttaset/ANTTRobotics_logo_full%20white-04.png" alt="logo" class="img-fluid1">
                     </a>
                     <br>
-                    <p>Level-04, Software Technology Park, Karwan Bazar, Dhaka-1215, Bangladesh</p>
+                    <p>iDEA, E-14/X, ICT Tower (14th Floor), Agargaon, Dhaka - 1207, Bangladesh.</p>
                     <p>311, Gangnam-daero, Seocho-gu Seoul, South Korea 06628</p>
+                    <p><strong>e-mail:</strong> anttrobotics@gmail.com <br> <strong>Support:</strong> +880 192 577 0036 (WhatsApp)</p>
                     <div class="list-inline social-list-default background-color social-hover-2 mt-2">
                         <li class="list-inline-item"><a class="twitter" href="#"><i class="fab fa-twitter"></i></a></li>
                         <li class="list-inline-item"><a class="youtube" href="#"><i class="fab fa-youtube"></i></a></li>
@@ -40,11 +41,9 @@
                                 <li>
                                     <a href="#">STEAM School Setup</a>
                                 </li>
-                                <li>
-                                    <a href="#">DIY Projects</a>
-                                </li>
-
+                               
                             </ul>
+                            
                         </div>
                         <div class="col-sm-6 col-md-3 col-lg-3 mb-4 mb-sm-4 mb-md-0 mb-lg-0">
                             <h6 class="text-uppercase">Edtech Products</h6>
@@ -79,37 +78,44 @@
                                 <li>
                                     <a href="#">Robotics R&D</a>
                                 </li>
-
+                                <li>
+                                    <a href="{{ route('admin.login') }}">Admin</a>
+                                </li>
                             </ul>
                         </div>
                         <div class="col-sm-6 col-md-3 col-lg-3">
                             <h6 class="text-uppercase">Company</h6>
                             <ul>
                                 <li>
-                                    <a href="#">About us </a>
+                                    <a href="{{ route('aboutus') }}">About us </a>
                                 </li>
                                 <li>
-                                    <a href="#">Team </a>
+                                    <a href="{{ route('team') }}">Team </a>
                                 </li>
                                 <li>
-                                    <a href="#">Community Partner </a>
+                                    <a href="{{ route('comunity') }}">Community Partner </a>
                                 </li>
                                 <li>
-                                    <a href="#">Request for Partnership </a>
+                                    <a href="{{ route('partnership') }}">Request for Partnership </a>
                                 </li>
                                 <li>
-                                    <a href="#">Career </a>
+                                    <a href="{{ route('career') }}">Career </a>
                                 </li>
                                 <li>
-                                    <a href="#">FAQ  </a>
+                                    <a href="{{ route('faq') }}">FAQ  </a>
                                 </li>
                                 <li>
-                                    <a href="{{ route('admin.login') }}">Admin</a>
+                                    <a href="{{ route('lms-faq') }}">LMS FAQ  </a>
                                 </li>
                             </ul>
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="text-center app">
+                <h5>Dabble- One App. Infinite Control</h5>
+                <a href="https://play.google.com/store/apps/details?id=co.edublock&hl=en&gl=US" target="_blank"><img class="playstore" src="https://edublock.co/anttaset/googleplay.png"></a>
+                <a href="#"><img class="appstore" src="https://edublock.co/anttaset/appstore.png"></a>
             </div>
         </div>
         <!--end of container-->
@@ -121,7 +127,7 @@
             <div class="row">
                 <div class="col-md-6 col-lg-7">
                     <div class="copyright-wrap small-text">
-                        <p class="mb-0">&copy; Anttrobotics Theme Agency, All rights reserved</p>
+                        <p class="mb-0">&copy; Anttrobotics LTD, All rights reserved</p>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-5">

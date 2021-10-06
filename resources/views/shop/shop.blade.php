@@ -67,8 +67,8 @@
                   <img src="https://edublock.co/anttaset/product-asset/edublock/Reviewicons.png">
                 </div>
                 <div class="col-6">
-                  <p class="font-weight-bold" style="color: black;">Price</p>
-                  <span class="product-price"><del class="text-muted">BDT 8499</del> BDT 6800</span>
+                  <!-- <p class="font-weight-bold" style="color: black;">Price</p>
+                  <span class="product-price"><del class="text-muted">BDT 8499</del> BDT 6800</span> -->
                 </div>
               </div>
               <ul class="check-list-wrap text-left">
@@ -86,7 +86,7 @@
             </div>
               <div class="action-btns mt-4 px-4">
                 <!-- <a href="#" target="_blank" class="btn btn-brand-02 mr-3">Start Now</a> -->
-                <a class="btn btn-brand-02" href="{{ route('orderform', ['name'=> 'EduBlock', 'category' => 'Product', 'price' => 10, 'image' => 'https://edublock.co/anttaset/product-asset/edublock/p2.png']) }}">Buy Now</a>
+                <a href="{{ route('shop.edublock') }}" target="_blank" class="btn btn-outline-brand-02">Buy Now</a>
             </div>
             </div>
             </div>
@@ -99,7 +99,7 @@
         <div class="container-fluid" style="background-color: #f0f0f0">
           <div class="p-lg-5 p-3 inneriot">
             <h1 class="title font-weight-bold text-center">School of IoT -</h1>
-            <h2 class="title font-weight-bold text-center">IoT & Data Sciene Starter Kits for 10+ Years Kids</h2>
+            <h2 class="title font-weight-bold text-center">IoT & Data Science Starter Kits for 10+ Years Kids</h2>
             <div class="d-lg-none d-block col-12 mt-5">
               <img src="https://edublock.co/anttaset/product-asset/shop/iotimage.png" style="width: 100%;">
             </div>
@@ -110,8 +110,8 @@
                     <img src="https://edublock.co/anttaset/product-asset/schoolofiot/Reviewicons.png">
                   </div>
                   <div class="col-6 my-auto">
-                    <p class="font-weight-bold" style="color: black;">Price</p>
-                    <span class="product-price"><del class="text-muted">BDT 9499</del> BDT 8499</span>
+                    <!-- <p class="font-weight-bold" style="color: black;">Price</p>
+                    <span class="product-price"><del class="text-muted">BDT 9499</del> BDT 8499</span> -->
                   </div>
                 </div>
                 <ul class="check-list-wrap text-left">
@@ -129,7 +129,7 @@
                   </div>
                   <div class="action-btns p-4">
                     <!-- <a href="#" target="_blank" class="btn btn-brand-02 mr-3">Start Now</a> -->
-                    <a class="btn btn-brand-02" href="{{ route('orderform', ['name'=> 'School of Iot', 'category' => 'Product', 'price' => 10, 'image' => 'https://edublock.co/anttaset/product-asset/schoolofiot/2.png']) }}">Buy Now</a>
+                    <a href="{{ route('shop.schoolofiot') }}" target="_blank" class="btn btn-outline-brand-02">Buy Now</a>
                   </div>
                 </div>
               </div>

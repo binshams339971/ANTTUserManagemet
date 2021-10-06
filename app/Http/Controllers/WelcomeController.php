@@ -103,7 +103,7 @@ class WelcomeController extends Controller
         return view('pressrelease.press4');
     }
 
-    //Solutin Page
+    //Solution Page
     public function solution()
     {
         return view('solution');
@@ -123,5 +123,45 @@ class WelcomeController extends Controller
         return view('conditions.privacypolicy');
     }
 
+    //Footer Content Starts
+    public function aboutus()
+    {
+        return view('footer-content.aboutus');
+    }
+    public function team()
+    {
+        return view('footer-content.team');
+    }
+    public function comunity()
+    {
+        return view('footer-content.comunity');
+    }
+    public function career()
+    {
+        return view('footer-content.career');
+    }
+    public function faq()
+    {
+        return view('footer-content.faq');
+    }
+    public function LmsFaq()
+    {
+        return view('footer-content.lmsfaq');
+    }
+    public function partnership()
+    {
+        return view('footer-content.partnership');
+    }
+    public function partnershipSave(Request $request)
+    {
+        $request->validate([
+            'name'=>'required|min:3|max:16' ,
+            'email'=>'required|email',
+            'phone'=>'required|min:11|max:11',
+            'organzation'=>'required|min:3|max:52',
+            'message'=>'required|min:5|max:256',
+        ]);
+
+    }
 
 }

@@ -111,3 +111,14 @@ Route::post('/cancel', [SslCommerzPaymentController::class, 'cancel']);
 
 Route::post('/ipn', [SslCommerzPaymentController::class, 'ipn']);
 //SSLCOMMERZ END
+
+
+//Footer Content routes
+Route::get('/about-us', [WelcomeController::class, 'aboutus'])->name('aboutus');
+Route::get('/team', [WelcomeController::class, 'team'])->name('team');
+Route::get('/comunity', [WelcomeController::class, 'comunity'])->name('comunity');
+Route::get('/partnership', [WelcomeController::class, 'partnership'])->name('partnership');
+Route::post('/partnership', [WelcomeController::class, 'partnershipSave'])->name('partnership');
+Route::get('/career', [WelcomeController::class, 'career'])->name('career');
+Route::get('/faq', [WelcomeController::class, 'faq'])->name('faq');
+Route::get('/lms-faq', [WelcomeController::class, 'lmsFaq'])->name('lms-faq');

@@ -29254,3 +29254,19 @@ a.text-dark:hover, a.text-dark:focus {
 
 /*# sourceMappingURL=../../../scss */
 /*# sourceMappingURL=main.css.map */
+
+.playstore{
+  max-width: 10%;
+}
+.appstore{
+  max-width: 10%;
+}
+
+@media (min-width: 320px) and (max-width: 768px){
+  .playstore{
+    max-width: 30%;
+  }
+  .appstore{
+    max-width: 30%;
+  }
+}
