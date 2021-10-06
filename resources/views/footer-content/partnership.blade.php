@@ -84,7 +84,7 @@
                         @csrf
                             <div class="row mt-2">
                                 <div class="col-md-12"><p class="labels mb-0 text-left text-dark">Your Name</p>
-                                    <input type="text" name="name" class="form-control" value="">
+                                    <input type="text" name="name" class="form-control" value="{{ old('name') }}">
                                 </div>
                             </div>
                             @error('name')
@@ -94,7 +94,7 @@
                             @enderror
                             <div class="row mt-3">
                                 <div class="col-md-12"><p class="labels mb-0 text-left text-dark">Email Address</p>
-                                    <input type="text" name="email" class="form-control" value="">
+                                    <input type="text" name="email" class="form-control" value="{{ old('email') }}">
                                 </div>
                             </div>
                             @error('email')
@@ -104,7 +104,7 @@
                             @enderror
                             <div class="row mt-3">
                                 <div class="col-md-12"><p class="labels mb-0 text-left text-dark">Phone Number</p>
-                                    <input type="text" name="phone" class="form-control" value="">
+                                    <input type="text" name="phone" class="form-control" value="{{ old('phone') }}">
                                 </div>
                             </div>
                             @error('phone')
@@ -114,7 +114,7 @@
                             @enderror
                             <div class="row mt-3">
                                 <div class="col-md-12"><p class="labels mb-0 text-left text-dark">What is your Organization?</p>
-                                    <input type="text" name="organization" class="form-control" value="">
+                                    <input type="text" name="organization" class="form-control" value="{{ old('organization') }}">
                                 </div>
                             </div>
                             @error('organization')
@@ -124,7 +124,7 @@
                             @enderror
                             <div class="row mt-3">
                                 <div class="col-md-12"><p class="labels mb-0 text-left text-dark">Your Message</p>
-                                    <textarea class="form-control" name="message" placeholder="" rows="7" data-form-field="Message"></textarea>
+                                    <textarea class="form-control" name="message" placeholder="" value="{{ old('message') }}" rows="7" data-form-field="Message"></textarea>
                                 </div>
                             </div>
                             @error('message')
