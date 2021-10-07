@@ -113,7 +113,7 @@
                 </div>
             </div>
             <div class="text-center app">
-                <h5>Dabble- One App. Infinite Control</h5>
+                <h5>EduBlock - Learning STEAM</h5>
                 <a href="https://play.google.com/store/apps/details?id=co.edublock&hl=en&gl=US" target="_blank"><img class="playstore" src="https://edublock.co/anttaset/googleplay.png"></a>
                 <a href="#"><img class="appstore" src="https://edublock.co/anttaset/appstore.png"></a>
             </div>
