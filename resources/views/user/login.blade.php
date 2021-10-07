@@ -130,6 +130,19 @@
                ?>
             });
          </script>
+      @elseif(Session::has('emailNotFound'))
+         <script>
+            swal({
+               title: "Email is not found!",
+               text: "Please try with different account.",
+               icon: "error",
+            }).then(function() {
+               window.location = "login";
+               <?php
+                  Session::forget('emailNotFound');
+               ?>
+            });
+         </script>
       @endif
    </body>
 </html>

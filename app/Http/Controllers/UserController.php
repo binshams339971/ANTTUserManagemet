@@ -112,7 +112,7 @@ class UserController extends Controller
     {
         $request->validate([
             'name'=>'required|min:3|max:16',
-            'phone'=>'required|regex:/(0)[0-9]/|not_regex:/[a-z]/|min:11',
+            'phone'=>'required|regex:/(0)[0-9]/|not_regex:/[a-z]/|min:11|max:11',
             'school'=>'required|min:3|max:36',
             'class'=>'required|min:1|max:12',
             'address'=>'required|min:3|max:36',
@@ -249,7 +249,7 @@ class UserController extends Controller
     public function orderPlace(Request $request){
         $request->validate([
             'studentname'=>'required|min:3|max:16',
-            'phone'=>'required|regex:/(0)[0-9]/|not_regex:/[a-z]/|min:11',
+            'phone'=>'required|regex:/(0)[0-9]/|not_regex:/[a-z]/|min:11|max:11',
             'school'=>'required|min:3|max:36',
             'class'=>'required|min:1|max:12',
             'address'=>'required|min:3|max:36',
@@ -283,14 +283,17 @@ class UserController extends Controller
 
     public function googleLogin(Request $request)
     {
-        $googleUser = Socialite::driver('google')->stateless()->user();
-        $this->_registerorLoginUser($googleUser, $request);
-        if(!Session::has('emailFound')){
-            return redirect()->route('dashboard');
-        }else{
-            return redirect()->route('login');
+        try{
+            $googleUser = Socialite::driver('google')->stateless()->user();
+            $this->_registerorLoginUser($googleUser, $request);
+            if(!Session::has('emailFound')){
+                return redirect()->route('dashboard');
+            }else{
+                return redirect()->route('login');
         }
-        
+        }catch(\Exception $e){
+            return redirect()->route('login');
+        }       
     }
 
     public function redirectToFacebook()
@@ -300,13 +303,23 @@ class UserController extends Controller
 
     public function facebookLogin(Request $request)
     {
-        $facebookUser = Socialite::driver('facebook')->stateless()->user();
-        $this->_registerorLoginUser($facebookUser, $request);
-        if(!Session::has('emailFound')){
-            return redirect()->route('dashboard');
-        }else{
+        try{
+            $facebookUser = Socialite::driver('facebook')->stateless()->user();
+            if(!$facebookUser->email){
+                $request->session()->put('emailNotFound', "Email not found");
+                return redirect()->route('login');
+            }else{
+                $this->_registerorLoginUser($facebookUser, $request);
+            }
+            if(!Session::has('emailFound')){
+                return redirect()->route('dashboard');
+            }else{
+                return redirect()->route('login');
+            }
+        }catch(\Exception $e){
             return redirect()->route('login');
         }
+       
     }
 
 
