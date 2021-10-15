@@ -29255,18 +29255,83 @@ a.text-dark:hover, a.text-dark:focus {
 /*# sourceMappingURL=../../../scss */
 /*# sourceMappingURL=main.css.map */
 
-.playstore{
-  max-width: 10%;
-}
-.appstore{
-  max-width: 10%;
+.playstoreicon{
+  max-width: 12%;
 }
 
-@media (min-width: 320px) and (max-width: 768px){
-  .playstore{
+.appstoreicon{
+  max-width: 12%;
+} 
+
+.playstore{
+  max-width: 30%;
+}
+
+.playstore11{
+  max-width: 50%;
+} 
+
+.eduapp{
+  max-width: 50%;
+}
+
+@media (min-width: 320px) and (max-width: 900px){
+
+  .playstoreicon{
     max-width: 30%;
   }
-  .appstore{
+
+  .appstoreicon{
     max-width: 30%;
+  }
+
+  .playstore{
+    max-width: 50%;
+  }
+  .eduapp{
+    max-width: 50%;
   }
 }
+
+/* List Design Edublock Digital Manual */
+
+.content0 ol {
+  counter-reset: li; 
+  list-style: none; 
+  padding: 0;
+  text-shadow: 0 1px 0 rgba(255,255,255,.5);
+}
+
+.content0 ol a {
+  position: relative;
+  display: block;
+  padding: .4em .4em .4em 2em;
+  margin: .5em 0;
+  background: #DAD2CA;
+  color: #444;
+  text-decoration: none;
+  border-radius: .3em;
+  transition: .3s ease-out;
+}
+
+.content0 ol a:hover { background: #E9E4E0; }
+.content0 ol a:hover:before { transform: rotate(360deg); }
+.content0 ol a:before {
+  content: counter(li);
+  counter-increment: li;
+  position: absolute;
+  left: -1.3em;
+  top: 50%;
+  margin-top: -1.3em;
+  background: #f9dd94;
+  height: 2em;
+  width: 2em;
+  line-height: 2em;
+  border: .3em solid #fff;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 2em;
+  transition: all .3s ease-out;
+}
+    
+.pdfobject-container { height: 800px; border: 1rem solid rgba(0,0,0,.1); }

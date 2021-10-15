@@ -20,7 +20,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="google-site-verification" content="z8eugNKi33OtVizosZQ5-bw5HKKo_uMibPyKUkvxVmU">
 
-<title>Facilitate Industry 4.0</title>
+<title>Facilitate Industry 4.0 | ANTT Robotics Ltd.</title>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
@@ -41,8 +41,6 @@
 </head>
 
 <body>
-
-
 
 <div class="page-wrapper">
 
@@ -85,7 +83,6 @@
                     </div>
                     <div class="col-md-6 col-lg-5">
                         <div class="hero-animation-img pt-lg-4">
-                            <!-- <img class="img-fluid" src="assets/img/home-banner-img.png" alt="animation image"> -->
                         </div>
                     </div>
                 </div>
@@ -94,7 +91,7 @@
         <!--load hero end-->
 
         <!--load hero start-->
-        <div class="client-section pb-60 mt--80">
+          <div class="client-section pb-60 mt--80">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-12">
@@ -106,25 +103,25 @@
                             </div>
                             <div class="owl-carousel owl-theme clients-carousel-2 dot-indicator">
                                 <div class="item single-customer">
-                                    <img src="https://edublock.co/anttaset/bangla1.png" alt="client logo" class="customer-logo">
+                                    <img src="{{ asset('/assets/images/home/bangla1.png') }}" alt="client logo" class="customer-logo">
                                 </div>
                                 <div class="item single-customer">
-                                    <img src="https://edublock.co/anttaset/basis.png" alt="client logo" class="customer-logo">
+                                    <img src="{{ asset('/assets/images/home/basis.png') }}" alt="client logo" class="customer-logo">
                                 </div>
                                 <div class="item single-customer">
-                                    <img src="https://edublock.co/anttaset/ict.png" alt="client logo" class="customer-logo">
+                                    <img src="{{ asset('/assets/images/home/ict.png') }}" alt="client logo" class="customer-logo">
                                 </div>
                                 <div class="item single-customer">
-                                    <img src="https://edublock.co/anttaset/Bhtp.png" alt="client logo" class="customer-logo">
+                                    <img src="{{ asset('/assets/images/home/Bhtp.png') }}" alt="client logo" class="customer-logo">
                                 </div>
                                 <div class="item single-customer">
-                                    <img src="https://edublock.co/anttaset/ideaa.png" alt="client logo" class="customer-logo">
+                                    <img src="{{ asset('/assets/images/home/ideaa.png') }}" alt="client logo" class="customer-logo">
                                 </div>
                                 <div class="item single-customer">
-                                    <img src="https://edublock.co/anttaset/incube.png" alt="client logo" class="customer-logo">
+                                    <img src="{{ asset('/assets/images/home/incube.png') }}" alt="client logo" class="customer-logo">
                                 </div>
                                 <div class="item single-customer">
-                                    <img src="https://edublock.co/anttaset/kkpc.png" alt="client logo" class="customer-logo">
+                                    <img src="{{ asset('/assets/images/home/kkpc.png') }}" alt="client logo" class="customer-logo">
                                 </div>
                             </div>
                         </div>
@@ -225,19 +222,15 @@
                             </ul>
 
                             <div class="action-btns mt-3">
-                                <!-- <a href="#" target="_blank" class="btn btn-brand-02 mr-3">Start Now</a> -->
+                                
                                 <a href="https://edublock.co/" target="_blank" class="btn btn-outline-brand-02">Start Now</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-6">
                         <div class="mask-image1">
-                            <img src="https://edublock.co/anttaset/AIbasedsolutions.png" class="img-fluid" alt="about">
-<!--
-                            <div class="item-icon video-promo-content">
-                                <a href="https://www.youtube.com/watch?v=9No-FiEInLA" class="popup-youtube video-play-icon text-center m-auto"><span class="ti-control-play"></span> </a>
-                            </div>
--->
+                            <img src="{{ asset('/assets/images/home/AIbasedsolutions.png') }}" class="img-fluid" alt="about">
+
                         </div>
                     </div>
                 </div>
@@ -249,7 +242,7 @@
                 <div class="row align-items-center justify-content-between justify-content-sm-center justify-content-md-center">
                     <div class="col-sm-5 col-md-6 col-lg-6 mb-5 mb-md-5 mb-sm-5 mb-lg-0">
                         <div class="download-img">
-                            <img src="https://edublock.co/anttaset/Sabab_transparant-02.png" alt="download" class="img-fluid">
+                            <img src="{{ asset('/assets/images/home/Sabab_transparant-02.png') }}" alt="download" class="img-fluid">
                         </div>
                     </div>
                     <div class="col-md-12 col-lg-6">
@@ -267,7 +260,7 @@ Explore Easy Plug & Play Robots, Tools, Sensors to Develop Your Kids Creativity 
 
 
                             <div class="action-btns mt-4">
-                                <!-- <a href="#" target="_blank" class="btn btn-brand-02 mr-3">Start Now</a> -->
+                                
                                 <a href="https://edublock.co/" target="_blank" class="btn btn-outline-brand-02">Start Now</a>
                             </div>
                         </div>
@@ -285,16 +278,7 @@ Explore Easy Plug & Play Robots, Tools, Sensors to Develop Your Kids Creativity 
                             <h2 class="font-weight-bold">AI based Learning Management System for Students & Schools</h2>
                             <p>We are offering only for your children and students to learn properly. Our software will track your students progress & KPI to keep teachers more involved in child care and educating. We offer world class curriculum, source code, robotics tools, teachers training, IDE and LMS. All of those are in one software or ecosystem.</p>
 
-<!--
-                            <ul class="check-list-wrap py-3">
-                                <li>Learning Programming Language for Better Career</li>
-                                <li>Learning Basic Computer Science (CS) </li>
-                                <li>STEAM Curriculum for Schools & Teachers </li>
-                                <li>Artificial Intelligence - Learning Management System</li>
-                                <li>Gafied Robots and tools for Learning CS </li>
-                                <li>STEAM Courses for Students</li>
-                            </ul>
--->
+
 
                             <div class="action-btns mt-3">
                                 <!-- <a href="#" target="_blank" class="btn btn-brand-02 mr-3">Start Now</a> -->
@@ -304,12 +288,8 @@ Explore Easy Plug & Play Robots, Tools, Sensors to Develop Your Kids Creativity 
                     </div>
                     <div class="col-md-6 col-lg-6">
                         <div class="mask-image1">
-                            <img src="https://edublock.co/anttaset/AILMS-05.png" class="img-fluid" alt="about">
-<!--
-                            <div class="item-icon video-promo-content">
-                                <a href="https://www.youtube.com/watch?v=9No-FiEInLA" class="popup-youtube video-play-icon text-center m-auto"><span class="ti-control-play"></span> </a>
-                            </div>
--->
+                            <img src="{{ asset('/assets/images/home/AILMS-05.png') }}" class="img-fluid" alt="about">
+
                         </div>
                     </div>
                 </div>
@@ -321,7 +301,7 @@ Explore Easy Plug & Play Robots, Tools, Sensors to Develop Your Kids Creativity 
                 <div class="row align-items-center justify-content-between justify-content-sm-center justify-content-md-center">
                     <div class="col-sm-5 col-md-6 col-lg-6 mb-5 mb-md-5 mb-sm-5 mb-lg-0">
                         <div class="download-img">
-                            <img src="https://edublock.co/anttaset/Rahat_Schoolof%20IoT-02.png" alt="download" class="img-fluid">
+                            <img src="{{ asset('/assets/images/home/Rahat_Schoolof_IoT-02.png') }}" alt="download" class="img-fluid">
                         </div>
                     </div>
                     <div class="col-md-12 col-lg-6">
@@ -370,12 +350,9 @@ Explore Easy Plug & Play Robots, Tools, Sensors to Develop Your Kids Creativity 
                     <div class="col-lg-4 col-md-6 col-sm-8">
                         <div class="text-center bg-white single-pricing-pack mt-4">
                             <div class="price-img pt-4">
-                                <img src="https://edublock.co/anttaset/Student_Edubot01.png" alt="price" width="120" class="img-fluid">
+                                <img src="{{ asset('/assets/images/home/Student_Edubot01.png') }}" alt="price" width="120" class="img-fluid">
                             </div>
-                            <!-- <div class="py-4 border-0 pricing-header">
-                                <div class="price text-center mb-0 monthly-price color-secondary" style="display: block;">$00<span>.99</span></div>
-                                <div class="price text-center mb-0 yearly-price color-secondary" style="display: none;">$69<span>.99</span></div>
-                            </div> -->
+                            
                             <div class="price-name">
                                 <h5 class="mb-0">New Maker </h5>
                             </div>
@@ -390,18 +367,15 @@ Explore Easy Plug & Play Robots, Tools, Sensors to Develop Your Kids Creativity 
                     <div class="col-lg-4 col-md-6 col-sm-8">
                         <div class="popular-price bg-white text-center single-pricing-pack mt-4">
                             <div class="price-img pt-4">
-                                <img src="https://edublock.co/anttaset/Teacher-01-01.png" alt="price" width="120" class="img-fluid">
+                                <img src="{{ asset('/assets/images/home/Teacher-01-01.png') }}" alt="price" width="120" class="img-fluid">
                             </div>
-                            <!-- <div class="py-4 border-0 pricing-header">
-                                <div class="price text-center mb-0 monthly-price color-secondary" style="display: block;">$00<span>.99</span></div>
-                                <div class="price text-center mb-0 yearly-price color-secondary" style="display: none;">$159<span>.99</span></div>
-                            </div> -->
+                            
                             <div class="price-name">
                                 <h5 class="mb-0">STEAM Teacher </h5>
                             </div>
                             <div class="pricing-content">
                               <p>For the new STEAM teacher ANTT Robotics is provided with very interactive learning solutions specially for the teachers. </P>
-                                <!-- <a href="#" class="btn btn-brand-02 btn-rounded mb-3" target="_blank">Purchase now</a> -->
+                                
                                     <a href="#" class="btn btn-outline-brand-02 btn-rounded mb-3" target="_blank">Purchase now</a>
                             </div>
                         </div>
@@ -409,12 +383,9 @@ Explore Easy Plug & Play Robots, Tools, Sensors to Develop Your Kids Creativity 
                     <div class="col-lg-4 col-md-6 col-sm-8">
                         <div class="text-center bg-white single-pricing-pack mt-4">
                             <div class="price-img pt-4">
-                                <img src="https://edublock.co/anttaset/School-01-01.png" alt="price" width="120" class="img-fluid">
+                                <img src="{{ asset('/assets/images/home/School-01-01.png') }}" alt="price" width="120" class="img-fluid">
                             </div>
-                            <!-- <div class="py-4 border-0 pricing-header">
-                                <div class="price text-center mb-0 monthly-price color-secondary" style="display: block;">$00<span>.99</span></div>
-                                <div class="price text-center mb-0 yearly-price color-secondary" style="display: none;">$259<span>.99</span></div>
-                            </div> -->
+                            
                             <div class="price-name">
                                 <h5 class="mb-0">Academic Institutes </h5>
                             </div>
@@ -424,14 +395,7 @@ Explore Easy Plug & Play Robots, Tools, Sensors to Develop Your Kids Creativity 
                             </div>
                         </div>
                     </div>
-                    <!-- <div class="col-12">
-                        <div class="support-cta text-center mt-5">
-                            <h5 class="mb-1"><span class="ti-headphone-alt color-primary mr-3"></span>We're Here to Help You
-                            </h5>
-                            <p>Have some questions? <a href="#">Chat with us now</a>, or <a href="#">send us an email</a> to
-                                get in touch.</p>
-                        </div>
-                    </div> -->
+                    
                 </div>
             </div>
         </section>
@@ -451,7 +415,7 @@ Explore Easy Plug & Play Robots, Tools, Sensors to Develop Your Kids Creativity 
                 <div class="row align-items-center">
                     <div class="col-md-12 col-lg-6 mb-5 mb-md-5 mb-sm-5 mb-lg-0">
                         <div class="img-wrap">
-                            <img src="https://edublock.co/anttaset/ProductMaping01.png" alt="download" class="img-fluid">
+                            <img src="{{ asset('/assets/images/home/ProductMaping01.png') }}" alt="download" class="img-fluid">
                         </div>
                     </div>
                     <div class="col-md-12 col-lg-6">
@@ -490,16 +454,7 @@ Explore Easy Plug & Play Robots, Tools, Sensors to Develop Your Kids Creativity 
                                     </div>
                                 </div>
                             </div>
-                            <!-- <div class="card mt-3">
-                                <a class="card-header collapsed" data-toggle="collapse" href="#collapse3" aria-expanded="false">
-                                    <h6 class="mb-0 d-inline-block">Support related issues for the template?</h6>
-                                </a>
-                                <div id="collapse3" class="collapse " data-parent="#accordion" style="">
-                                    <div class="card-body white-bg">
-                                        <p>Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table. Professionally embrace customer directed value vis-a-vis high-quality portals. Quickly underwhelm B2C users with maintainable benefits. </p>
-                                    </div>
-                                </div>
-                            </div> -->
+                            
                         </div>
                     </div>
                 </div>
@@ -525,7 +480,7 @@ Explore Easy Plug & Play Robots, Tools, Sensors to Develop Your Kids Creativity 
                                            <div class="testimonial-quote-wrap">
                                                <div class="media author-info mb-3">
                                                    <div class="author-img mr-3">
-                                                       <img src="https://edublock.co/anttaset/client.png" alt="client" class="img-fluid">
+                                                       <img src="{{ asset('/assets/images/home/client.png') }}" alt="client" class="img-fluid">
                                                    </div>
                                                    <div class="media-body text-white">
                                                        <h5 class="mb-0 text-white">Patricia Ishemo</h5>
@@ -542,7 +497,7 @@ Explore Easy Plug & Play Robots, Tools, Sensors to Develop Your Kids Creativity 
                                            <div class="testimonial-quote-wrap">
                                                <div class="media author-info mb-3">
                                                    <div class="author-img mr-3">
-                                                       <img src="https://edublock.co/anttaset/client1.png" alt="client" class="img-fluid">
+                                                       <img src="{{ asset('/assets/images/home/client1.png') }}" alt="client" class="img-fluid">
                                                    </div>
                                                    <div class="media-body text-white">
                                                        <h5 class="mb-0 text-white">Priyasree Das</h5>
@@ -559,7 +514,7 @@ Explore Easy Plug & Play Robots, Tools, Sensors to Develop Your Kids Creativity 
                                            <div class="testimonial-quote-wrap">
                                                <div class="media author-info mb-3">
                                                    <div class="author-img mr-3">
-                                                       <img src="https://edublock.co/anttaset/3.jpg" alt="client" class="img-fluid">
+                                                       <img src="{{ asset('/assets/images/home/3.jpg') }}" alt="client" class="img-fluid">
                                                    </div>
                                                    <div class="media-body text-white">
                                                        <h5 class="mb-0 text-white">Imtiaz Ahmad</h5>
@@ -594,7 +549,7 @@ Explore Easy Plug & Play Robots, Tools, Sensors to Develop Your Kids Creativity 
                 <div class="row">
                     <div class="col-md-6 col-lg-3">
                         <div class="single-team-wrap bg-white text-center border rounded p-4 mt-4">
-                            <img src="https://edublock.co/anttaset/team-member-image/member1.png" alt="team image" width="120" class="img-fluid m-auto pb-4">
+                            <img src="{{ asset('/assets/images/home/member1.png') }}" alt="team image" width="120" class="img-fluid m-auto pb-4">
                             <div class="team-content">
                                 <h5 class="mb-0">Thajid Ibna Rouf Uday</h5>
                                 <span>Founder & CEO </span><br><br>
@@ -617,7 +572,7 @@ Explore Easy Plug & Play Robots, Tools, Sensors to Develop Your Kids Creativity 
                     </div>
                     <div class="col-md-6 col-lg-3">
                         <div class="single-team-wrap bg-white text-center border rounded p-4 mt-4">
-                            <img src="https://edublock.co/anttaset/team-member-image/member2.png" alt="team image" width="120" class="img-fluid m-auto pb-4">
+                            <img src="{{ asset('/assets/images/home/member2.png') }}" alt="team image" width="120" class="img-fluid m-auto pb-4">
                             <div class="team-content">
                                 <h5 class="mb-0">Nazib Ahmmad</h5>
                                 <span>Founder & CTO</span><br><br><br>
@@ -640,7 +595,7 @@ Explore Easy Plug & Play Robots, Tools, Sensors to Develop Your Kids Creativity 
                     </div>
                     <div class="col-md-6 col-lg-3">
                         <div class="single-team-wrap bg-white text-center border rounded p-4 mt-4">
-                            <img src="https://edublock.co/anttaset/team-member-image/member3.png" alt="team image" width="120" class="img-fluid m-auto pb-4">
+                            <img src="{{ asset('/assets/images/home/member3.png') }}" alt="team image" width="120" class="img-fluid m-auto pb-4">
                             <div class="team-content">
                                 <h5 class="mb-0">Afnan Islam </h5>
                                 <span>Director, R&D </span><br><br><br>
@@ -663,7 +618,7 @@ Explore Easy Plug & Play Robots, Tools, Sensors to Develop Your Kids Creativity 
                     </div>
                     <div class="col-md-6 col-lg-3">
                         <div class="single-team-wrap bg-white text-center border rounded p-4 mt-4">
-                            <img src="https://edublock.co/anttaset/team-member-image/member4.png" alt="team image" width="120" class="img-fluid m-auto pb-4">
+                            <img src="{{ asset('/assets/images/home/member4.png') }}" alt="team image" width="120" class="img-fluid m-auto pb-4">
                             <div class="team-content">
                                 <h5 class="mb-0">Tanzir Ahmmad</h5>
                                 <span>Head Of R&D</span><br><br><br>
@@ -707,23 +662,14 @@ Explore Easy Plug & Play Robots, Tools, Sensors to Develop Your Kids Creativity 
                     <div class="col-md-6 col-lg-4">
                         <div class="single-blog-card card border-0 shadow-sm mt-4">
                             <div class="blog-img position-relative">
-                                <img src="https://edublock.co/anttaset/MayshaWithstateminister.png" class="card-img-top" alt="blog">
+                                <img src="{{ asset('/assets/images/home/MayshaWithstateminister.png') }}" class="card-img-top" alt="blog">
                                 <!-- <div class="meta-date">
                                     <strong>24</strong>
                                     <small>Apr</small>
                                 </div> -->
                             </div>
                             <div class="card-body">
-                                <!-- <div class="post-meta mb-2">
-                                    <ul class="list-inline meta-list">
-                                        <li class="list-inline-item"><i class="fas fa-heart mr-2"></i><span>45</span>
-                                            Comments
-                                        </li>
-                                        <li class="list-inline-item"><i class="fas fa-share-alt mr-2"></i><span>10</span>
-                                            Share
-                                        </li>
-                                    </ul>
-                                </div> -->
+                               
                                 <h3 class="h5 mb-2 card-title"><a href="#">AI - Service Robot</a></h3>
                                 <p class="card-text">We are producing Fully Autonomous Service based Robot, Made in Bangladesh.</p>
                                 <a href="#" class="detail-link">See More <i class="fas fa-arrow-right"></i></a>
@@ -733,23 +679,11 @@ Explore Easy Plug & Play Robots, Tools, Sensors to Develop Your Kids Creativity 
                     <div class="col-md-6 col-lg-4">
                         <div class="single-blog-card card border-0 shadow-sm mt-4">
                             <div class="blog-img position-relative">
-                                <img src="https://edublock.co/anttaset/IoTSnacksboxgarmnets.png" class="card-img-top" alt="blog">
-                                <!-- <div class="meta-date">
-                                    <strong>24</strong>
-                                    <small>Apr</small>
-                                </div> -->
+                                <img src="{{ asset('/assets/images/home/IoTSnacksboxgarmnets.png') }}" class="card-img-top" alt="blog">
+                                
                             </div>
                             <div class="card-body">
-                                <!-- <div class="post-meta mb-2">
-                                    <ul class="list-inline meta-list">
-                                        <li class="list-inline-item"><i class="fas fa-heart mr-2"></i><span>45</span>
-                                            Comments
-                                        </li>
-                                        <li class="list-inline-item"><i class="fas fa-share-alt mr-2"></i><span>10</span>
-                                            Share
-                                        </li>
-                                    </ul>
-                                </div> -->
+                                
                                 <h3 class="h5 mb-2 card-title"><a href="#">Industrial IoT Solutions</a></h3>
                                 <p class="card-text">High Quality Board and Easy Integration to Data Visualization Enables your Industry Control.</p>
                                 <a href="https://iotsnacksbox.io/" class="detail-link">See More <i class="fas fa-arrow-right"></i></a>
@@ -759,23 +693,11 @@ Explore Easy Plug & Play Robots, Tools, Sensors to Develop Your Kids Creativity 
                     <div class="col-md-6 col-lg-4">
                         <div class="single-blog-card card border-0 shadow-sm mt-4">
                             <div class="blog-img position-relative">
-                                <img src="https://edublock.co/anttaset/R_D.png" class="card-img-top" alt="blog">
-                                <!-- <div class="meta-date">
-                                    <strong>24</strong>
-                                    <small>Apr</small>
-                                </div> -->
+                                <img src="{{ asset('/assets/images/home/R_D.png') }}" class="card-img-top" alt="blog">
+                                
                             </div>
                             <div class="card-body">
-                                <!-- <div class="post-meta mb-2">
-                                    <ul class="list-inline meta-list">
-                                        <li class="list-inline-item"><i class="fas fa-heart mr-2"></i><span>45</span>
-                                            Comments
-                                        </li>
-                                        <li class="list-inline-item"><i class="fas fa-share-alt mr-2"></i><span>10</span>
-                                            Share
-                                        </li>
-                                    </ul>
-                                </div> -->
+                                
                                 <h3 class="h5 mb-2 card-title"><a href="#">Robotics R&D</a></h3>
                                 <p class="card-text">Developing your Software & Hardware product to compatible your business with Industry 5.0</p>
                                 <a href="#" class="detail-link">Read more <i class="fas fa-arrow-right"></i></a>

@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 use App\Models\AdminModel;
 use App\Models\OrderModel;
+use DB;
 
 class AdminController extends Controller
 {
@@ -53,7 +54,7 @@ class AdminController extends Controller
         for ($x = 0; $x < count($paidOrder); $x++) {
             $paidAmount = $paidAmount + $paidOrder[$x]->price;
         }
-        return view('admin.dashboard')->with('orders', $totalOrder)
+        return view('admin.newdashboard')->with('orders', $totalOrder)
                                     ->with('paid', $paidOrder)
                                     ->with('paidAmount', $paidAmount)
                                     ->with('pendings', $pendingOrder)
@@ -64,6 +65,12 @@ class AdminController extends Controller
     {
         $order = OrderModel::all()->sortByDesc('id');
         return view('admin.allorder')->with('orders', $order);
+    }
+
+    public function payments()
+    {
+        $payment = DB::table('payments')->get()->sortByDesc('id');
+        return view('admin.paymentHistory')->with('payments', $payment);
     }
 
     public function adminChangePasswordForm(){

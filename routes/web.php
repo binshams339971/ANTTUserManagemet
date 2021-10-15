@@ -38,6 +38,9 @@ Route::get('/course/iotcar', [WelcomeController::class, 'iotcar'])->name('course
 Route::get('/shop',[WelcomeController::class, 'shop'])->name('shop');
 Route::get('/shop/edublock',[WelcomeController::class, 'edublock'])->name('shop.edublock');
 Route::get('/shop/schoolofiot',[WelcomeController::class, 'schoolofiot'])->name('shop.schoolofiot');
+Route::get('/edublockdigitalmanual',[WelcomeController::class, 'edublockdigitalmanual'])->name('edublockdigitalmanual');
+Route::get('/edublockdigitalmanual/book',[WelcomeController::class, 'edublockdigitalmanualBook'])->name('edublockdigitalmanualbook');
+Route::get('/edublockdigitalmanual/apk',[WelcomeController::class, 'apkDownload'])->name('apkdownload');
 
 //Press Release routes
 Route::get('/pressrelease', [WelcomeController::class, 'pressrelease'])->name('pressrelease');
@@ -66,6 +69,7 @@ Route::group(['middleware' => 'authuser'], function () {
     Route::get('/home', [UserController::class, 'dashboard'])->name('dashboard');
     Route::get('/logout', [UserController::class, 'logout'])->name('logout');
     Route::get('/user/order', [UserController::class, 'allorder'])->name('allorder');
+    Route::get('/user/payment-history', [UserController::class, 'paymentHistory'])->name('payment');
     Route::get('/user/profile', [UserController::class, 'profileForm'])->name('user.profile');
     Route::post('/user/profile', [UserController::class, 'profileUpdate'])->name('user.profile');
     Route::get('/user/changepassword', [UserController::class, 'changePasswordForm'])->name('user.changepassword');
@@ -90,6 +94,7 @@ Route::post('/admin/login', [AdminController::class, 'adminLogin'])->name('admin
 Route::group(['middleware' => 'authadmin'], function () {
     Route::get('/admin/home', [AdminController::class, 'adminHome'])->name('admin.home');
     Route::get('/admin/allorder', [AdminController::class, 'allOrders'])->name('admin.allorder');
+    Route::get('/admin/payment-history', [AdminController::class, 'payments'])->name('admin.payments');
     Route::get('/admin/changepassword', [AdminController::class, 'adminChangePasswordForm'])->name('admin.changepassword');
     Route::post('/admin/changepassword', [AdminController::class, 'adminChangePassword'])->name('admin.changepassword');
     Route::get('/admin/newadmin', [AdminController::class, 'addNewAdminForm'])->name('admin.newadmin');
@@ -122,3 +127,5 @@ Route::post('/partnership', [WelcomeController::class, 'partnershipSave'])->name
 Route::get('/career', [WelcomeController::class, 'career'])->name('career');
 Route::get('/faq', [WelcomeController::class, 'faq'])->name('faq');
 Route::get('/lms-faq', [WelcomeController::class, 'lmsFaq'])->name('lms-faq');
+
+

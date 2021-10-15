@@ -22,7 +22,7 @@
                <input type="radio" name="" id="login" checked>
                <input type="radio" name="" id="">
                <label for="login" class="slide login">Login</label>
-               <label for="signup" class="slide signup"><a href="{{route('register')}}">Signup</a></label>
+               <label for="signup" class="slide signup"><a href="{{route('register')}}">Sign Up</a></label>
                <div class="slider-tab"></div>
             </div>
             <div class="form-inner">
@@ -66,7 +66,7 @@
                   </ul>
                   
                   <div class="signup-link">
-                     Not a member? <a href="{{route('register')}}">Signup now</a>
+                     Not a member? <a href="{{route('register')}}">Sign Up now</a>
                   </div>
                </form>
                           

@@ -9,6 +9,7 @@ use Session;
 use App\Models\UserModel;
 use App\Models\UserInformation;
 use App\Models\OrderModel;
+use DB;
 
 class UserController extends Controller
 {
@@ -80,7 +81,7 @@ class UserController extends Controller
         for ($x = 0; $x < count($paidOrder); $x++) {
             $paidAmount = $paidAmount + $paidOrder[$x]->price;
         }
-        return view('user.dashboard')->with('orders', $totalOrder)
+        return view('user.newdashboard')->with('orders', $totalOrder)
                                     ->with('paid', $paidOrder)
                                     ->with('paidAmount', $paidAmount)
                                     ->with('pendings', $pendingOrder)
@@ -92,6 +93,13 @@ class UserController extends Controller
         $email = session('email');
     	$order = OrderModel::where('email', $email)->orderBy('id', 'desc')->get();
         return view('user.allorder')->with('orders', $order);
+    }
+
+    public function paymentHistory()
+    {
+        $email = session('email');
+    	$payment = DB::table('payments')->where('email', $email)->orderBy('id', 'desc')->get();
+        return view('user.paymentHistory')->with('payments', $payment);
     }
 
     public function  profileForm()
@@ -112,7 +120,7 @@ class UserController extends Controller
     {
         $request->validate([
             'name'=>'required|min:3|max:16',
-            'phone'=>'required|regex:/(0)[0-9]/|not_regex:/[a-z]/|min:11|max:11',
+            'phone'=>'required|regex:/(0)[0-9]/|not_regex:/[a-z]/|digits:11',
             'school'=>'required|min:3|max:36',
             'class'=>'required|min:1|max:12',
             'address'=>'required|min:3|max:36',
@@ -249,7 +257,7 @@ class UserController extends Controller
     public function orderPlace(Request $request){
         $request->validate([
             'studentname'=>'required|min:3|max:16',
-            'phone'=>'required|regex:/(0)[0-9]/|not_regex:/[a-z]/|min:11|max:11',
+            'phone'=>'required|regex:/(0)[0-9]/|not_regex:/[a-z]/|digits:11',
             'school'=>'required|min:3|max:36',
             'class'=>'required|min:1|max:12',
             'address'=>'required|min:3|max:36',

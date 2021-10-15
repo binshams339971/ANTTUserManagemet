@@ -30,7 +30,7 @@
                 <div class="sidebar-brand">
                     <a href="#">ANTT ROBOTICS LTD.</a>
                     <div id="close-sidebar">
-                    <i class="d-block d-md-none fas fa-times"></i>
+                        <i class="d-block d-md-none fas fa-times"></i>
                     </div>
                 </div>
                 <div class="sidebar-header">
@@ -129,7 +129,7 @@
                         <div class="icon">
                             <i class="fa fa-cart-plus" aria-hidden="true"></i>
                         </div>
-                        <a href="#" class="card-box-footer">View More <i class="fa fa-arrow-circle-right"></i></a>
+                        <a href="{{route('allorder')}}" class="card-box-footer">View More <i class="fa fa-arrow-circle-right"></i></a>
                     </div>
                 </div>
     
@@ -142,7 +142,7 @@
                         <div class="icon">
                             <i class="fa fa-money"></i>
                         </div>
-                        <a href="#" class="card-box-footer">View More <i class="fa fa-arrow-circle-right"></i></a>
+                        <a href="{{route('allorder')}}" class="card-box-footer">View More <i class="fa fa-arrow-circle-right"></i></a>
                     </div>
                 </div>
                 <div class="col-lg-4 col-sm-6">
@@ -154,7 +154,7 @@
                         <div class="icon">
                             <i class="fa fa-credit-card" aria-hidden="true"></i>
                         </div>
-                        <a href="#" class="card-box-footer">View More <i class="fa fa-arrow-circle-right"></i></a>
+                        <a href="{{route('allorder')}}" class="card-box-footer">View More <i class="fa fa-arrow-circle-right"></i></a>
                     </div>
                 </div>
                 <div class="col-lg-4 col-sm-6">
@@ -166,7 +166,7 @@
                         <div class="icon">
                             <i class="fa fa-refresh"></i>
                         </div>
-                        <a href="#" class="card-box-footer">View More <i class="fa fa-arrow-circle-right"></i></a>
+                        <a href="{{route('allorder')}}" class="card-box-footer">View More <i class="fa fa-arrow-circle-right"></i></a>
                     </div>
                 </div>
                 <div class="col-lg-4 col-sm-6">
@@ -178,7 +178,7 @@
                         <div class="icon">
                             <i class="fa fa-credit-card" aria-hidden="true"></i>
                         </div>
-                        <a href="#" class="card-box-footer">View More <i class="fa fa-arrow-circle-right"></i></a>
+                        <a href="{{route('allorder')}}" class="card-box-footer">View More <i class="fa fa-arrow-circle-right"></i></a>
                     </div>
                 </div>
             </div>
@@ -194,7 +194,7 @@
                         <div class="icon">
                             <i class="fa fa-graduation-cap" aria-hidden="true"></i>
                         </div>
-                        <a href="#" class="card-box-footer">View More <i class="fa fa-arrow-circle-right"></i></a>
+                        <a href="{{route('course')}}" class="card-box-footer">View More <i class="fa fa-arrow-circle-right"></i></a>
                     </div>
                 </div>
     
@@ -207,7 +207,7 @@
                         <div class="icon">
                             <i class="fa fa-wpexplorer" aria-hidden="true"></i>
                         </div>
-                        <a href="#" class="card-box-footer">View More <i class="fa fa-arrow-circle-right"></i></a>
+                        <a href="{{route('shop')}}" class="card-box-footer">View More <i class="fa fa-arrow-circle-right"></i></a>
                     </div>
                 </div>
             </div>

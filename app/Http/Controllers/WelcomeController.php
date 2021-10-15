@@ -79,6 +79,19 @@ class WelcomeController extends Controller
     {
         return view('shop.schoolofiot');
     }
+    public function edublockdigitalmanual()
+    {
+        return view('shop.edublockdigitalmanual');
+    }
+    public function edublockdigitalmanualBook()
+    {
+        return view('shop.edublockdigitalmanualbook');
+    }
+    public function apkDownload()
+    {
+        $file_path = public_path('assets/files/edubot-v2.0.0.apk');
+        return response()->download($file_path);
+    }
 
     //Press Release Start
     public function pressRelease()
@@ -172,6 +185,16 @@ class WelcomeController extends Controller
         $request->session()->put('success11', "1");
         return redirect()->route('partnership');
 
+    }
+
+    public function new1()
+    {
+        return view('newdashboard');
+    }
+
+    public function new2()
+    {
+        return view('newdashboard2');
     }
 
 }

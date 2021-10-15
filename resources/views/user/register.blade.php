@@ -22,7 +22,7 @@
                <input type="radio" name="" id="">
                <input type="radio" name="" id="signup" checked>
                <label for="login" class="slide login"><a href="{{route('login')}}">Login</a></label>
-               <label for="signup" class="slide signup">Signup</label>
+               <label for="signup" class="slide signup">Sign Up</label>
                <div class="slider-tab"></div>
             </div>
             <div class="form-inner">
@@ -54,7 +54,7 @@
                   @enderror
                   <div class="field btn">
                      <div class="btn-layer"></div>
-                     <input type="submit" id="submit" value="Signup">
+                     <input type="submit" id="submit" value="Sign Up">
                   </div>
                   <div class="other-login-signup my-3">
                     <div class="or-login-signup text-center">
