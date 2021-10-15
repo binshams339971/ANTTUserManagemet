@@ -64,7 +64,7 @@
         <script>
            $( document ).ready(function(){
                 console.log($(this).width())
-                if(window.innerWidth < 400){
+                if(window.innerWidth < 560){
                     $('div').removeClass('show')
                     $('i').removeClass('bx-x')
                     $('body').removeClass('body-pd')
