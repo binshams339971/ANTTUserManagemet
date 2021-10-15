@@ -119,13 +119,13 @@ class UserController extends Controller
     public function  profileUpdate(Request $request)
     {
         $request->validate([
-            'name'=>'required|min:3|max:16',
+            'name'=>'required|min:3|max:60',
             'phone'=>'required|regex:/(0)[0-9]/|not_regex:/[a-z]/|digits:11',
-            'school'=>'required|min:3|max:36',
+            'school'=>'required|min:3|max:60',
             'class'=>'required|min:1|max:12',
-            'address'=>'required|min:3|max:36',
-            'city'=>'required|min:3|max:12',
-            'country'=>'required|min:3|max:16',
+            'address'=>'required|min:3|max:256',
+            'city'=>'required|min:3|max:36',
+            'country'=>'required|min:3|max:36',
             'postcode'=>'integer',
         ]);
         
@@ -256,13 +256,13 @@ class UserController extends Controller
 
     public function orderPlace(Request $request){
         $request->validate([
-            'studentname'=>'required|min:3|max:16',
+            'studentname'=>'required|min:3|max:60',
             'phone'=>'required|regex:/(0)[0-9]/|not_regex:/[a-z]/|digits:11',
-            'school'=>'required|min:3|max:36',
-            'class'=>'required|min:1|max:12',
-            'address'=>'required|min:3|max:36',
-            'city'=>'required|min:3|max:12',
-            'country'=>'required|min:3|max:16',
+            'school'=>'required|min:3|max:60',
+            'class'=>'required|min:1|max:36',
+            'address'=>'required|min:3|max:256',
+            'city'=>'required|min:3|max:36',
+            'country'=>'required|min:3|max:36',
         ]);
 
         $order = new OrderModel();
